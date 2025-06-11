@@ -36,6 +36,6 @@ public class Reservation {
 
         @NotEmpty
         private String name;
-        
+
     }
 
