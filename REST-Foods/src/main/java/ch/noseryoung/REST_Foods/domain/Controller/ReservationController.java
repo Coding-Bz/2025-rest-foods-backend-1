@@ -13,23 +13,23 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1")
+@RequestMapping("/api/v1/reservations")
 public class ReservationController {
 
     @Autowired
     ReservationService reservationService;
 
-    @GetMapping("/reservations")
+    @GetMapping("/")
     public ResponseEntity<List<Reservation>> getAllReservations() {
         return ResponseEntity.ok(reservationService.getAllReservations());
     }
 
-    @GetMapping("/reservations/{id}")
+    @GetMapping("/{id}")
     public ResponseEntity<Reservation> getReservation(@PathVariable UUID id) {
         return ResponseEntity.ok(reservationService.getReservation(id));
     }
 
-    @PostMapping("/reservations")
+    @PostMapping("/")
     public ResponseEntity<Reservation> createReservation(@Valid @RequestBody Reservation reservation) {
         LocalDate today = LocalDate.now();
         LocalTime now = LocalTime.now();
@@ -44,12 +44,12 @@ public class ReservationController {
         return ResponseEntity.ok(reservationService.createReservation(reservation));
     }
 
-    @PutMapping("/reservations/{id}")
+    @PutMapping("/{id}")
     public ResponseEntity<Reservation> updateReservation(@PathVariable UUID id, @Valid @RequestBody Reservation reservation) {
         return ResponseEntity.ok(reservationService.updateReservation(id, reservation));
     }
 
-    @DeleteMapping("/reservations/{id}")
+    @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteReservation(@PathVariable UUID id) {
         reservationService.deleteReservation(id);
         return ResponseEntity.noContent().build();
