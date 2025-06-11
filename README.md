@@ -1,6 +1,6 @@
 ## Datenbank starten (Docker)
 
-Führe diesen Befehl aus, bevor du das Projekt startest:
+Führe diesen Befehl aus in der CLI in Docker Desktop (falls noch nicht gemacht), bevor du das Projekt startest:
 
 ```bash
 docker run -d -p 5432:5432 \
