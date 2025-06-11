@@ -1,4 +1,10 @@
 package ch.noseryoung.REST_Foods.domain.Repository;
+import ch.noseryoung.REST_Foods.Model.Menu;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+import java.util.UUID;
 
-public interface MenuRepository {
+@Repository
+public interface MenuRepository   extends JpaRepository<Menu, UUID> {
+
 }
