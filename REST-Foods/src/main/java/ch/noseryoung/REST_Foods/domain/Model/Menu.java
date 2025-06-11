@@ -1,4 +1,4 @@
-package ch.noseryoung.REST_Foods.Model;
+package ch.noseryoung.REST_Foods.domain.Model;
 
 import jakarta.persistence.*;
         import jakarta.validation.constraints.NotEmpty;
