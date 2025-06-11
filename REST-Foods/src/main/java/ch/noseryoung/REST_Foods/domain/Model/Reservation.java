@@ -2,40 +2,35 @@ package ch.noseryoung.REST_Foods.domain.Model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import jakarta.validation.constraints.NotNull;
+import lombok.*;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
-import java.util.Timer;
 import java.util.UUID;
+
 @Entity
 @Getter
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="reservation")
-
+@Table(name = "reservation")
 public class Reservation {
 
         @Id
         @GeneratedValue
-        @Column(name = "reservation_id",  nullable = false)
+        @Column(name = "reservation_id", nullable = false)
         private UUID id;
 
-        @NotEmpty
+        @NotNull(message = "Time must not be null.")
         private LocalTime time;
 
-        @NotEmpty
-        private Date dateTime;
+        @NotNull(message = "Date must not be null.")
+        private LocalDate date;
 
-        @NotEmpty
+        @NotNull(message = "Party size must not be null.")
         private Integer partySize;
 
-        @NotEmpty
+        @NotEmpty(message = "Name must not be empty.")
         private String name;
-
-    }
-
+}
