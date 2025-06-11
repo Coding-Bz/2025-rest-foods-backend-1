@@ -8,7 +8,9 @@ docker run -d -p 5432:5432 \
   -e POSTGRES_DB=RestFood \
   --name RestFood \
   postgres
+```
 
+---
 ## Swagger-UI benutzen
 
 Sobald das Projekt läuft, kann Swagger zur Dokumentation und zum Testen der API verwendet werden.
