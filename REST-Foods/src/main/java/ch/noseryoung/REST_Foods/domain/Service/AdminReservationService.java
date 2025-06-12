@@ -4,12 +4,15 @@ import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Model.Reservation;
 import ch.noseryoung.REST_Foods.domain.Repository.MenuRepository;
 import ch.noseryoung.REST_Foods.domain.Repository.ReservationRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.UUID;
 
 
 @Service
@@ -23,7 +26,7 @@ public class AdminReservationService {
 
     }
 
-    public long getAllCount(){
+    public long getAllCount() {
         return reservationRepository.count();
     }
 
@@ -43,10 +46,9 @@ public class AdminReservationService {
         return reservationRepository.countByPartySize(size);
     }
 
-    public long getCountName(String name){
+    public long getCountName(String name) {
         return reservationRepository.countByName(name);
     }
-
 
 
     public List<Reservation> getListName(String name) {
@@ -68,10 +70,20 @@ public class AdminReservationService {
 
 
     public List<Reservation> getListDateAndTime(LocalTime time, LocalDate date) {
-        return reservationRepository.findByDateAndTime(date,time);
+        return reservationRepository.findByDateAndTime(date, time);
+    }
+
+    public void deleteReservation(UUID id) {
+        reservationRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("This reservation doesn't exists"));
+        reservationRepository.deleteById(id);
     }
 
 
+    public Reservation updateReservation(UUID id, Reservation reservation) {
+        reservationRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("This reservation doesn't exists"));
+        reservation.setId(id);
+        return reservationRepository.save(reservation);
+    }
 
 }
 
