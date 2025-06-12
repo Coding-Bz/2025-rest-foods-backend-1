@@ -1,9 +1,13 @@
 package ch.noseryoung.REST_Foods.domain.Model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.DecimalMin;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
-import lombok.*;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 import java.util.UUID;
 
@@ -12,12 +16,12 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "menu")
-public class Menu {
+@Table(name = "drink")
+public class Drink {
 
     @Id
     @GeneratedValue
-    @Column(name = "menu_id", nullable = false)
+    @Column(name = "drink_id", nullable = false)
     private UUID id;
 
     @NotEmpty(message = "Name can't be empty.")
@@ -26,20 +30,15 @@ public class Menu {
     @NotNull(message = "Price can't be null.")
     private Integer price;
 
-    @NotEmpty(message = "Category can't be empty.")
-    private String category;
-
-    @NotEmpty(message = "Dietary requirements can't be empty.")
-    @Column(name = "dietary_requirements")
-    private String dietaryRequirements;
-
-    private String allergies;
-
     private String description;
 
-    @NotNull(message = "Chef's choice can't be null.")
-    @Column(name = "chefs_choice")
-    private Boolean chefsChoice;
-
     private String pictureLink;
+
+    @NotNull(message = "Alcoholic must be specified.")
+    private Boolean alcoholic;
+
+    @NotNull(message = "Volume can't be null.")
+    @DecimalMin(value = "0.01", message = "Volume must be greater than 0.")
+    private Double volume;
 }
+

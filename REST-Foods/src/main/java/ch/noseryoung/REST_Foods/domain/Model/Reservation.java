@@ -23,16 +23,16 @@ public class Reservation {
         @Column(name = "reservation_id", nullable = false)
         private UUID id;
 
-        @NotNull(message = "Time must not be null.")
+        @NotNull(message = "Time can't be null.")
         @JsonFormat(pattern = "HH:mm")
         private LocalTime time;
 
-        @NotNull(message = "Date must not be null.")
+        @NotNull(message = "Date can't be null.")
         private LocalDate date;
 
-        @NotNull(message = "Party size must not be null.")
+        @NotNull(message = "Party size can't be null.")
         private Integer partySize;
 
-        @NotEmpty(message = "Name must not be empty.")
+        @NotEmpty(message = "Name can't be empty.")
         private String name;
 }
