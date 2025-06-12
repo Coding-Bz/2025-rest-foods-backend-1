@@ -1,4 +1,4 @@
-package ch.noseryoung.REST_Foods.domain.Services;
+package ch.noseryoung.REST_Foods.domain.Service;
 
 import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Repository.MenuRepository;
