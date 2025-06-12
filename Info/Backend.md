@@ -14,7 +14,7 @@ docker run -d -p 5432:5432 \
 Anstatt den PostgreSQL-Container manuell mit einem langen `docker run`-Befehl zu erstellen und danach jedesmal auf Docker-Desktop wechseln um den Docker zu starten, kannst du auch einfach `docker-compose` verwenden.  
 
 ### Über Docker-Compose starten
-
+**Falls der andere Docker in Docker Desktop schon erstellt wurde diesen wieder löschen, falls man Docker-Compose verwenden will!**
 Im Terminal in IntelliJ folgenden Befehl eingeben:
 ```
 docker-compose up -d
