@@ -1,5 +1,6 @@
 package ch.noseryoung.REST_Foods.domain.Model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
@@ -23,6 +24,7 @@ public class Reservation {
         private UUID id;
 
         @NotNull(message = "Time must not be null.")
+        @JsonFormat(pattern = "HH:mm")
         private LocalTime time;
 
         @NotNull(message = "Date must not be null.")
