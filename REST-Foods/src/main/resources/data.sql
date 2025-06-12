@@ -59,3 +59,21 @@ VALUES
 ('d79c3e42-5e29-477c-a251-843a7323041a', '2025-06-12', '18:30', 6, 'Lord Sinclair')
 ON CONFLICT (reservation_id) DO NOTHING;;
 
+INSERT INTO drink (drink_id, name, price, description, picture_link, alcoholic, volume)
+VALUES
+('1b8c2e90-998e-4f9b-bc9e-1abf3f83a1e1', 'Château Margaux 2015', 220, 'Premier Grand Cru Classé from Bordeaux', 'https://hrd-live.cdn.scayle.cloud/images/ded99ea5b7933dfb88ac3c6b200683af.jpg?quality=75', TRUE, 0.75),
+('2f7dd12c-3d0c-4dd1-8cb4-beb8f99227c4', 'Dom Pérignon Vintage 2012', 180, 'Iconic vintage champagne with rich complexity', 'https://premiumbottles.dk/cdn/shop/files/Dom_Perignon_initialer_Blanc_LA_MB.jpg?v=1743100858', TRUE, 0.75),
+('3a16c7d9-0df3-4a35-8d35-e4e0cb172cf7', 'Evian Mineral Water', 6, 'Natural spring water from the French Alps', 'https://beverageuniverse.com/media/catalog/product/cache/d6b24e0b635c0897113a74c0029895da/e/v/evian-ivoo-evanglas25-main.jpg', FALSE, 0.5),
+('490ef43b-1a0e-4f70-bcc2-e8129d2f4c1b', 'San Pellegrino Sparkling', 7, 'Lightly carbonated mineral water', 'https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2022-11/sp-img-gallery-product-750-glass.jpg', FALSE, 0.5),
+('5d1c47a1-e31f-4f6b-9be4-7ad74a9c1c9d', 'Chardonnay Grand Reserve', 95, 'Creamy, oak-aged white wine from Burgundy', 'https://ocave.ch/wp-content/uploads/2023/09/Champagne-Gallimard-Chardonnay-Grande-Reserve.jpg', TRUE, 0.75),
+('642c8d7e-d021-4e60-8f7b-ff48d1e94498', 'Organic Apple Juice', 8, 'Cold-pressed juice from organic apples', 'https://online.citysuper.com.hk/cdn/shop/products/301480230-1-daylesford-organic-apple-juice-750ml_1024x1024.jpg?v=1661393429', FALSE, 0.3),
+('75aefa2b-9b64-45dc-9a33-57f0c65e7d9d', 'Sauvignon Blanc', 55, 'Crisp and refreshing white wine', 'https://baythornewines.co.uk/cdn/shop/products/WeissburgunderMeran-2.jpg?v=1650463107', TRUE, 0.75),
+('8c7bff15-dfd1-4f31-96e4-e1189ef0bcb3', 'Japanese Umeshu Plum Wine', 60, 'Sweet-sour flavor with subtle fruit notes', 'https://cdn11.bigcommerce.com/s-ji18vmeuwa/products/1132/images/1390/10243-1-Gekkeikan-Umeshu-Plum-Wine-Large%25253Fw%25253D1200%252526h%25253D1200%252526sm%25253Dc%252526fmt%25253Dauto__58051.1687531340.1280.1280.jpg?c=1', TRUE, 0.5),
+('98ed5a4e-d358-4764-9b08-c8e1c3cdd4ee', 'Barolo DOCG 2016', 135, 'Robust red wine from Piemonte', 'https://s.tannico.it/media/catalog/product/cache/51/thumbnail/0dc2d03fe217f8c83829496872af24a0/p/r/prunotto-barolo_1_2.jpg', TRUE, 0.75),
+('a27ec8ab-f6fb-4f6d-a45e-d7dd3ae82387', 'Sparkling Elderflower Tonic', 10, 'Elegant non-alcoholic floral drink', 'https://digitalcontent.api.tesco.com/v2/media/ghs/46295eca-27fe-4a61-b0fa-8e5a7dfc222d/f345fce5-6005-4f66-b4d2-08e98d08992f_857846522.jpeg?h=960&w=960', FALSE, 0.25),
+('b3c9cc6b-ff29-49fc-8267-cdd7cf1532f3', 'Single Malt Scotch – 18 Years', 150, 'Rich and smoky with notes of oak and vanilla', 'https://drinks-and-style.ch/wp-content/uploads/2020/05/Highland-Park_18yo.jpg', TRUE, 0.05),
+('c45f57c4-018f-4742-8c9d-9a4efc13ff54', 'Cold Brew Coffee', 9, 'Smooth and aromatic, served chilled', 'https://content.jdmagicbox.com/v2/comp/mumbai/w7/022pxx22.xx22.240730160153.f4w7/catalogue/every-morning-cartel-mumbai-coffee-shops-3s65ky5cpd-250.jpg', FALSE, 0.3),
+('d69868b2-3e6d-48a3-93b2-4dc83f83b729', 'Grand Cru Riesling', 75, 'Floral aromas and crisp acidity from Alsace', 'https://ndjohn.co.uk/cdn/shop/products/grand_cru_brand_gewuztraminer.jpg?v=1553172123', TRUE, 0.75),
+('ec998d8f-6cf3-4c84-90be-f51232a50a60', 'Blood Orange Spritz', 12, 'Refreshing citrus-based aperitif', 'https://boozehouse.com.au/cdn/shop/files/WhiskyAD_9.png?v=1739703124&width=1946', TRUE, 0.3),
+('fd8cb022-0f70-4b47-a038-0e920d6dd3dc', 'Hibiscus Iced Tea', 7, 'House-brewed with floral notes and light sweetness', 'https://www.buybluetea.com/cdn/shop/files/Hibiscus_Mint_Glass_1080x.jpg?v=1694171817', FALSE, 0.3)
+ON CONFLICT (drink_id) DO NOTHING;;
