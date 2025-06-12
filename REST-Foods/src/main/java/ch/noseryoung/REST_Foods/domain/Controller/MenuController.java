@@ -38,8 +38,8 @@ public class MenuController {
     }
 
     @PutMapping("/{menuId}")
-    public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID id, @RequestBody Menu details) throws Exception {
-        return new ResponseEntity<>(menuService.updateMenu(id, details), HttpStatus.OK);
+    public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID menuId, @Valid @RequestBody Menu details) throws Exception {
+        return new ResponseEntity<>(menuService.updateMenu(menuId, details), HttpStatus.OK);
     }
 
     @DeleteMapping("/{menuId}")
