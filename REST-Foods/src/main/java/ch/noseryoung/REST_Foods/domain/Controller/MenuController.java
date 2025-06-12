@@ -13,7 +13,7 @@ import java.util.UUID;
 
 
 @RestController
-@RequestMapping("/api/v1/")
+@RequestMapping("/api/v1/menus")
 public class MenuController {
     private final MenuService menuService;
 
@@ -27,23 +27,23 @@ public class MenuController {
         return new ResponseEntity<>(menuService.getAllMenus(), HttpStatus.OK);
     }
 
-    @GetMapping("/customer/{customerId}")
+    @GetMapping("/menu/{menuId}")
     public ResponseEntity<Menu> getMenuById(@Valid @PathVariable UUID customerId) {
         return new ResponseEntity<>(menuService.getMenuByID(customerId), HttpStatus.OK);
     }
 
-    @PostMapping("/customer")
+    @PostMapping("/menu")
     public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu customer) {
         return new ResponseEntity<>(menuService.createMenu(customer), HttpStatus.CREATED);
     }
 
-    @PutMapping("/customer/{id}")
+    @PutMapping("/menu/{id}")
     public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID id, @RequestBody Menu details) throws Exception {
         return new ResponseEntity<>(menuService.updateMenu(id, details), HttpStatus.OK);
     }
 
-    @DeleteMapping("/customer/{customerId}")
-    public ResponseEntity<Void> deleteMenu(@Valid @PathVariable("customerId") UUID customerId) {
+    @DeleteMapping("/menu/{menuId}")
+    public ResponseEntity<Void> deleteMenu(@Valid @PathVariable("menuId") UUID customerId) {
         menuService.deleteMenu(customerId);
         return ResponseEntity.noContent().build();
     }
