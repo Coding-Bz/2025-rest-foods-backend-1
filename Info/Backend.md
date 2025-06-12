@@ -9,6 +9,16 @@ docker run -d -p 5432:5432 \
   --name RestFood \
   postgres
 ```
+## Alternative: Datenbank mit Docker Compose starten
+
+Anstatt den PostgreSQL-Container manuell mit einem langen `docker run`-Befehl zu erstellen und danach jedesmal auf Docker-Desktop wechseln um den Docker zu starten, kannst du auch einfach `docker-compose` verwenden.  
+
+### Über Docker-Compose starten
+
+Im Terminal in IntelliJ folgenden Befehl eingeben:
+```
+docker-compose up -d
+```
 
 ---
 ## Swagger-UI benutzen
