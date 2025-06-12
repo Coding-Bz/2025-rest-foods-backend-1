@@ -27,73 +27,20 @@ public class AdminMenuController {
         return new ResponseEntity<>(adminMenuService.getAllMenusCount(), HttpStatus.OK);
     }
 
-    @GetMapping("/category")
-    public ResponseEntity<List<Object>> getCategoryMenus(@RequestParam String category) {
-        long count = adminMenuService.getCountCategory(category);
-        List<Menu> list = adminMenuService.getListByCategories(category);
 
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-
-        return ResponseEntity.ok(response);
+    @PostMapping("/menu")
+    public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu menu) {
+        return new ResponseEntity<>(adminMenuService.createMenu(menu), HttpStatus.CREATED);
     }
 
-
-    @GetMapping("/dieteryRequirements")
-    public ResponseEntity<List<Object>> getDieteryRequirements(@RequestParam String requirement) {
-        long count = adminMenuService.getCountDieteryRequirements(requirement);
-        List<Menu> list = adminMenuService.getListByDieteryRequirement(requirement);
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-        return ResponseEntity.ok(response);
-
-
+    @PutMapping("/{menuId}")
+    public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID menuId, @Valid @RequestBody Menu details) throws Exception {
+        return new ResponseEntity<>(adminMenuService.updateMenu(menuId,details), HttpStatus.OK);
     }
-
-    @GetMapping("/allergies")
-    public ResponseEntity<List<Object>> getAllergies(@RequestParam String allergy) {
-        long count = adminMenuService.getCountAllergy(allergy);
-        List<Menu> list = adminMenuService.getListByAllergy(allergy);
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-        return ResponseEntity.ok(response);
-
+    @DeleteMapping("/{menuId}")
+    public ResponseEntity<Void> deleteMenu(@Valid @PathVariable("menuId") UUID menuId) {
+       adminMenuService.deleteMenu(menuId);
+        return ResponseEntity.noContent().build();
     }
-
-    @GetMapping("/chefsChoice")
-    public ResponseEntity<List<Object>> getChefsChoice(@RequestParam boolean choice) {
-        long count = adminMenuService.getCountChefsChoice(choice);
-        List<Menu> list = adminMenuService.getListByChefsChoice(choice);
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-        return ResponseEntity.ok(response);
-    }
-
-    @GetMapping("/price/low")
-    public ResponseEntity<Object> getPrice(@RequestParam int price) {
-        long count = adminMenuService.getCountPricelessThan(price);
-        List<Menu> list = adminMenuService.getListByPricelessThan(price);
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-        return ResponseEntity.ok(response);
-    }
-
-    @GetMapping("/price/high")
-
-    public ResponseEntity<Object> getPriceHigh(@RequestParam int price) {
-        long count = adminMenuService.getCountPriceGreaterThan(price);
-        List<Menu> list = adminMenuService.getListByPriceGreaterThan(price);
-        List<Object> response = new ArrayList<>();
-        response.add(count);
-        response.add(list);
-        return ResponseEntity.ok(response);
-
-    }
-
 
 }
