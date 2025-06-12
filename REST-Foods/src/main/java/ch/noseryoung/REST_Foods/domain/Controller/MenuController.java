@@ -8,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -32,20 +33,73 @@ public class MenuController {
         return new ResponseEntity<>(menuService.getMenuByID(menuId), HttpStatus.OK);
     }
 
-    @PostMapping("/")
-    public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu menu) {
-        return new ResponseEntity<>(menuService.createMenu(menu), HttpStatus.CREATED);
+
+    @GetMapping("/category")
+    public ResponseEntity<List<Object>> getCategoryMenus(@RequestParam String category) {
+        long count = menuService.getCountCategory(category);
+        List<Menu> list = menuService.getListByCategories(category);
+
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+
+        return ResponseEntity.ok(response);
     }
 
-    @PutMapping("/{menuId}")
-    public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID menuId, @Valid @RequestBody Menu details) throws Exception {
-        return new ResponseEntity<>(menuService.updateMenu(menuId, details), HttpStatus.OK);
+
+    @GetMapping("/dieteryRequirements")
+    public ResponseEntity<List<Object>> getDieteryRequirements(@RequestParam String requirement) {
+        long count = menuService.getCountDieteryRequirements(requirement);
+        List<Menu> list = menuService.getListByDieteryRequirement(requirement);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+
+
     }
 
-    @DeleteMapping("/{menuId}")
-    public ResponseEntity<Void> deleteMenu(@Valid @PathVariable("menuId") UUID menuId) {
-        menuService.deleteMenu(menuId);
-        return ResponseEntity.noContent().build();
+    @GetMapping("/allergies")
+    public ResponseEntity<List<Object>> getAllergies(@RequestParam String allergy) {
+        long count = menuService.getCountAllergy(allergy);
+        List<Menu> list = menuService.getListByAllergy(allergy);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+
+    }
+
+    @GetMapping("/chefsChoice")
+    public ResponseEntity<List<Object>> getChefsChoice(@RequestParam boolean choice) {
+        long count = menuService.getCountChefsChoice(choice);
+        List<Menu> list = menuService.getListByChefsChoice(choice);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/price/low")
+    public ResponseEntity<Object> getPrice(@RequestParam int price) {
+        long count = menuService.getCountPricelessThan(price);
+        List<Menu> list = menuService.getListByPricelessThan(price);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/price/high")
+
+    public ResponseEntity<Object> getPriceHigh(@RequestParam int price) {
+        long count = menuService.getCountPriceGreaterThan(price);
+        List<Menu> list = menuService.getListByPriceGreaterThan(price);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+
     }
 
 

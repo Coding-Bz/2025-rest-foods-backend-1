@@ -19,27 +19,6 @@ public class MenuService {
         this.menuRepository = menuRepository;
     }
 
-    public Menu createMenu(Menu menu) {
-        Menu savedCustomer = menuRepository.save(menu);
-        return savedCustomer;
-    }
-
-    public Menu updateMenu(UUID menuID, Menu menuDetails) {
-        Menu menu = menuRepository.findById(menuID)
-                .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
-
-        menu.setName(menuDetails.getName());
-        menu.setDescription(menuDetails.getDescription());
-        menu.setAllergies(menuDetails.getAllergies());
-        menu.setCategory(menuDetails.getCategory());
-        menu.setChefsChoice(menuDetails.getChefsChoice());
-        menu.setPrice(menuDetails.getPrice());
-        menu.setDietaryRequirements(menuDetails.getDietaryRequirements());
-        menu.setPictureLink(menuDetails.getPictureLink());
-
-        return menuRepository.save(menu);
-    }
-
 
     public List<Menu> getAllMenus() {
         return menuRepository.findAll();
@@ -50,13 +29,56 @@ public class MenuService {
                 .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
     }
 
-
-    public void deleteMenu(UUID menuId) {
-        Menu menu = menuRepository.findById(menuId)
-                .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
-        menuRepository.delete(menu);
+    public List<Menu> getListByCategories(String category) {
+        return menuRepository.findByCategory(category);
     }
 
+    public List<Menu> getListByAllergy(String allergy) {
+        return menuRepository.findByAllergies(allergy);
+    }
+
+    public List<Menu> getListByDieteryRequirement(String dieteryRequirement) {
+        return menuRepository.findByDietaryRequirements(dieteryRequirement);
+    }
+
+    public List<Menu> getListByChefsChoice(boolean chefChoice) {
+        return menuRepository.findByChefsChoice(chefChoice);
+    }
+
+    public List<Menu> getListByPricelessThan(double price) {
+        return menuRepository.findByPriceIsLessThan(price);
+    }
+
+    public List<Menu> getListByPriceGreaterThan(double price) {
+        return menuRepository.findByPriceIsGreaterThan(price);
+    }
+
+
+    public long getCountDieteryRequirements(String dieteryRequirement) {
+        return menuRepository.countByDietaryRequirements(dieteryRequirement);
+    }
+
+
+    public long getCountCategory(String category) {
+        return menuRepository.countByCategory(category);
+    }
+
+    public long getCountAllergy(String allergy) {
+        return menuRepository.countByAllergies(allergy);
+    }
+
+    public long getCountChefsChoice(boolean chefChoice) {
+        return menuRepository.countByChefsChoice(chefChoice);
+
+    }
+
+    public long getCountPricelessThan(double price) {
+        return menuRepository.countByPriceIsLessThan(price);
+    }
+
+    public long getCountPriceGreaterThan(double price) {
+        return menuRepository.countByPriceIsGreaterThan(price);
+    }
 
 }
 
