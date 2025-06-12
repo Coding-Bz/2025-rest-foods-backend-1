@@ -2,6 +2,7 @@ package ch.noseryoung.REST_Foods.domain.Service;
 
 import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Repository.MenuRepository;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -25,7 +26,7 @@ public class MenuService {
 
     public Menu updateMenu(UUID menuID, Menu menuDetails) {
         Menu menu = menuRepository.findById(menuID)
-                .orElseThrow(() -> new RuntimeException("Menu not found"));
+                .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
 
         menu.setName(menuDetails.getName());
         menu.setDescription(menuDetails.getDescription());
@@ -34,6 +35,7 @@ public class MenuService {
         menu.setChefsChoice(menuDetails.getChefsChoice());
         menu.setPrice(menuDetails.getPrice());
         menu.setDietaryRequirements(menuDetails.getDietaryRequirements());
+        menu.setPictureLink(menuDetails.getPictureLink());
 
         return menuRepository.save(menu);
     }
@@ -45,13 +47,13 @@ public class MenuService {
 
     public Menu getMenuByID(UUID menuId) {
         return menuRepository.findById(menuId)
-                .orElseThrow(() -> new RuntimeException("Menu not found"));
+                .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
     }
 
 
     public void deleteMenu(UUID menuId) {
         Menu menu = menuRepository.findById(menuId)
-                .orElseThrow(() -> new RuntimeException("Menu not found"));
+                .orElseThrow(() -> new EntityNotFoundException("Menu not found"));
         menuRepository.delete(menu);
     }
 

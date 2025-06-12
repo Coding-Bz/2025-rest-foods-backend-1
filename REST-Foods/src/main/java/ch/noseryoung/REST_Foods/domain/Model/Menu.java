@@ -40,4 +40,6 @@ public class Menu {
     @NotNull(message = "Chef's choice must not be null.")
     @Column(name = "chefs_choice")
     private Boolean chefsChoice;
+
+    private String pictureLink;
 }
