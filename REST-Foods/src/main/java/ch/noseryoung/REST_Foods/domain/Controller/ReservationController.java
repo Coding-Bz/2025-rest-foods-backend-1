@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.UUID;
 
 @RestController
-@RequestMapping("/api/v1/reservations")
+@RequestMapping("/api/v1/reservation")
 public class ReservationController {
 
     @Autowired
