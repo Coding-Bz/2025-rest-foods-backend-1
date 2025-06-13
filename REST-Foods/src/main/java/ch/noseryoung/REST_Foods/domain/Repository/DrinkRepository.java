@@ -11,8 +11,6 @@ import java.util.UUID;
 public interface DrinkRepository extends JpaRepository<Drink, UUID> {
 
 
-    long countByDrink(Drink drink);
-
     long countByAlcoholic(boolean alcoholic);
 
     long countByCategory(String category);
