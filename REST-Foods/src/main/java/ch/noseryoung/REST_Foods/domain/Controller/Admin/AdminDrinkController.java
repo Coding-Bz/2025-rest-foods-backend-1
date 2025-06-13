@@ -1,14 +1,12 @@
-package ch.noseryoung.REST_Foods.domain.Controller;
+package ch.noseryoung.REST_Foods.domain.Controller.Admin;
 
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
-import ch.noseryoung.REST_Foods.domain.Service.AdminDrinkService;
-import ch.noseryoung.REST_Foods.domain.Service.DrinkService;
+import ch.noseryoung.REST_Foods.domain.Service.Admin.AdminDrinkService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
 import java.util.UUID;
 
 @RestController

@@ -1,13 +1,11 @@
-package ch.noseryoung.REST_Foods.domain.Service;
+package ch.noseryoung.REST_Foods.domain.Service.Customer;
 
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
 import ch.noseryoung.REST_Foods.domain.Repository.DrinkRepository;
-import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 
 @Service
 public class DrinkService {
