@@ -41,6 +41,9 @@ public class ReservationController {
         if (reservation.getDate().isEqual(today) && reservation.getTime().isBefore(now)) {
             throw new IllegalArgumentException("Reservation time must be in the future.");
         }
+        if (reservation.getPartySize() < 1) {
+            throw new IllegalArgumentException("Party size must be at least 1!");
+        }
         return ResponseEntity.ok(reservationService.createReservation(reservation));
     }
 
