@@ -21,6 +21,8 @@ public interface MenuRepository extends JpaRepository<Menu, UUID> {
 
     long countByPriceIsGreaterThan(double price);
 
+    long countByPriceIsBetween(double start, double end); 
+
 
     List<Menu> findByCategory(String category);
 
@@ -33,6 +35,8 @@ public interface MenuRepository extends JpaRepository<Menu, UUID> {
     List<Menu> findByPriceIsLessThan(double price);
 
     List<Menu> findByPriceIsGreaterThan(double price);
+
+    List<Menu> findByPriceIsBetween(double start, double end);
 
 
 }

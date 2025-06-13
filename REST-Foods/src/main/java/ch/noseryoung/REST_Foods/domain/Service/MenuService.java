@@ -80,5 +80,13 @@ public class MenuService {
         return menuRepository.countByPriceIsGreaterThan(price);
     }
 
+    public long getCountBetween(double min, double max) {
+        return menuRepository.countByPriceIsBetween(min, max);
+    }
+
+    public List<Menu> getListBetween(double min, double max) {
+        return menuRepository.findByPriceIsBetween(min, max);
+    }
+
 }
 

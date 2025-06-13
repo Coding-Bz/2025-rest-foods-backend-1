@@ -35,11 +35,12 @@ public class AdminMenuController {
 
     @PutMapping("/{menuId}")
     public ResponseEntity<Menu> updateMenu(@Valid @PathVariable UUID menuId, @Valid @RequestBody Menu details) throws Exception {
-        return new ResponseEntity<>(adminMenuService.updateMenu(menuId,details), HttpStatus.OK);
+        return new ResponseEntity<>(adminMenuService.updateMenu(menuId, details), HttpStatus.OK);
     }
+
     @DeleteMapping("/{menuId}")
     public ResponseEntity<Void> deleteMenu(@Valid @PathVariable("menuId") UUID menuId) {
-       adminMenuService.deleteMenu(menuId);
+        adminMenuService.deleteMenu(menuId);
         return ResponseEntity.noContent().build();
     }
 

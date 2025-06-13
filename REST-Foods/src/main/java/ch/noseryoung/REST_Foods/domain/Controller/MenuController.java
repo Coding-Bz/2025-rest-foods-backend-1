@@ -73,6 +73,9 @@ public class MenuController {
     @GetMapping("/chefsChoice")
     public ResponseEntity<List<Object>> getChefsChoice(@RequestParam boolean choice) {
         long count = menuService.getCountChefsChoice(choice);
+        if (count<=0){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
         List<Menu> list = menuService.getListByChefsChoice(choice);
         List<Object> response = new ArrayList<>();
         response.add(count);
@@ -83,6 +86,9 @@ public class MenuController {
     @GetMapping("/price/low")
     public ResponseEntity<Object> getPrice(@RequestParam int price) {
         long count = menuService.getCountPricelessThan(price);
+        if (count<=0){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
         List<Menu> list = menuService.getListByPricelessThan(price);
         List<Object> response = new ArrayList<>();
         response.add(count);
@@ -94,6 +100,9 @@ public class MenuController {
 
     public ResponseEntity<Object> getPriceHigh(@RequestParam int price) {
         long count = menuService.getCountPriceGreaterThan(price);
+        if (count<=0){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
         List<Menu> list = menuService.getListByPriceGreaterThan(price);
         List<Object> response = new ArrayList<>();
         response.add(count);
@@ -101,6 +110,19 @@ public class MenuController {
         return ResponseEntity.ok(response);
 
     }
+
+@GetMapping("/price/between")
+    public ResponseEntity<Object> getPriceBetween(@RequestParam int price1, @RequestParam int price2) {
+        long count = menuService.getCountBetween(price1, price2);
+        if (count<=0){
+            return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+        }
+        List<Menu> list=menuService.getListBetween(price1, price2);
+        List<Object> response = new ArrayList<>();
+        response.add(count);
+        response.add(list);
+        return ResponseEntity.ok(response);
+}
 
 
 }
