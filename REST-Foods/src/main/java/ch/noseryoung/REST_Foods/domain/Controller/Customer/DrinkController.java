@@ -1,9 +1,7 @@
-package ch.noseryoung.REST_Foods.domain.Controller;
+package ch.noseryoung.REST_Foods.domain.Controller.Customer;
 
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
-import ch.noseryoung.REST_Foods.domain.Model.Menu;
-import ch.noseryoung.REST_Foods.domain.Service.DrinkService;
-import jakarta.validation.Valid;
+import ch.noseryoung.REST_Foods.domain.Service.Customer.DrinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/drink")

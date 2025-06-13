@@ -1,4 +1,4 @@
-package ch.noseryoung.REST_Foods.domain.Service;
+package ch.noseryoung.REST_Foods.domain.Service.Admin;
 
 import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Repository.MenuRepository;
@@ -6,7 +6,6 @@ import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
 import java.util.UUID;
 
 

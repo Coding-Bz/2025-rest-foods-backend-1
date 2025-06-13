@@ -1,9 +1,7 @@
-package ch.noseryoung.REST_Foods.domain.Controller;
+package ch.noseryoung.REST_Foods.domain.Controller.Admin;
 
-import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Model.Reservation;
-import ch.noseryoung.REST_Foods.domain.Service.AdminReservationService;
-import ch.noseryoung.REST_Foods.domain.Service.ReservationService;
+import ch.noseryoung.REST_Foods.domain.Service.Admin.AdminReservationService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
