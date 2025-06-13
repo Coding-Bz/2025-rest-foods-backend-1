@@ -40,5 +40,10 @@ public class Drink {
     @NotNull(message = "Volume can't be null.")
     @DecimalMin(value = "0.01", message = "Volume must be greater than 0.")
     private Double volume;
+
+    @NotNull(message = "A drink has to have a category")
+    private String category;
+
+
 }
 
