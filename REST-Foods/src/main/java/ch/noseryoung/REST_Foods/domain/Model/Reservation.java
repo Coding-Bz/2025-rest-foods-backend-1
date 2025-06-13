@@ -18,21 +18,21 @@ import java.util.UUID;
 @Table(name = "reservation")
 public class Reservation {
 
-        @Id
-        @GeneratedValue
-        @Column(name = "reservation_id", nullable = false)
-        private UUID id;
+    @Id
+    @GeneratedValue
+    @Column(name = "reservation_id", nullable = false)
+    private UUID id;
 
-        @NotNull(message = "Time can't be null.")
-        @JsonFormat(pattern = "HH:mm")
-        private LocalTime time;
+    @NotNull(message = "Time can't be null.")
+    @JsonFormat(pattern = "HH:mm")
+    private LocalTime time;
 
-        @NotNull(message = "Date can't be null.")
-        private LocalDate date;
+    @NotNull(message = "Date can't be null.")
+    private LocalDate date;
 
-        @NotNull(message = "Party size can't be null.")
-        private Integer partySize;
+    @NotNull(message = "Party size can't be null.")
+    private Integer partySize;
 
-        @NotEmpty(message = "Name can't be empty.")
-        private String name;
+    @NotEmpty(message = "Name can't be empty.")
+    private String name;
 }

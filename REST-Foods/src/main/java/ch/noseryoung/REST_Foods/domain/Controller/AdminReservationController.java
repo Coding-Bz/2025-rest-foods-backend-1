@@ -68,10 +68,10 @@ public class AdminReservationController {
 
     @GetMapping("/customer")
     public ResponseEntity<List<Object>> getCustomerReservations(@RequestParam String name, @RequestParam LocalDate date) {
-        long count=adminReservationService.getCountName(name);
-        List<Reservation> list=adminReservationService.getListName(name);
-        Object side=adminReservationService.getListNameAndDate(name,date);
-        List<Object> response=new ArrayList<>();
+        long count = adminReservationService.getCountName(name);
+        List<Reservation> list = adminReservationService.getListName(name);
+        Object side = adminReservationService.getListNameAndDate(name, date);
+        List<Object> response = new ArrayList<>();
         response.add(count);
         response.add(list);
         response.add(side);
@@ -80,10 +80,11 @@ public class AdminReservationController {
 
     @GetMapping("/partySize")
     public long getPartySize(@RequestParam int partySize) {
-        long count=adminReservationService.getCountPartySize(partySize);
+        long count = adminReservationService.getCountPartySize(partySize);
         return count;
 
     }
+
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteReservation(@PathVariable UUID id) {
         adminReservationService.deleteReservation(id);

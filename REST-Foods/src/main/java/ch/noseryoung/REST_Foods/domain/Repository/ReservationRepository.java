@@ -23,7 +23,6 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
     long countByName(String name);
 
 
-
     List<Reservation> findByDate(LocalDate date);
 
     List<Reservation> findByTime(LocalTime time);
@@ -35,7 +34,6 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
     List<Reservation> findByDateAndTime(LocalDate date, LocalTime time);
 
     List<Reservation> findByNameAndDate(String name, LocalDate date);
-
 
 
 }
