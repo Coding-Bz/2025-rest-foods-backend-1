@@ -34,7 +34,7 @@ public class ReservationService {
         LocalDateTime combined = LocalDateTime.of(reservation.getDate(), reservation.getTime());
 
         if (combined.isBefore(LocalDateTime.now().plusHours(24))) {
-            throw new IllegalArgumentException("Reservation cannot be updated by emergencies plaese contact Admin.");
+            throw new IllegalArgumentException("Reservation cannot be updated by emergencies please contact Admin.");
         }
 
         reservation.setId(id);
