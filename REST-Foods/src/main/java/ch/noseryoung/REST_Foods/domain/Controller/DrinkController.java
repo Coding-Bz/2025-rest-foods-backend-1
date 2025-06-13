@@ -1,12 +1,15 @@
 package ch.noseryoung.REST_Foods.domain.Controller;
 
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
+import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Service.DrinkService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
@@ -21,24 +24,88 @@ public class DrinkController {
         return ResponseEntity.ok(drinkService.getAllDrinks());
     }
 
-    @GetMapping("/{id}")
-    public ResponseEntity<Drink> getDrink(@PathVariable UUID id) {
-        return ResponseEntity.ok(drinkService.getDrink(id));
+
+    @GetMapping("/count")
+    public long getDrinkCount() {
+        return drinkService.countDrinks();
     }
 
-    @PostMapping("/")
-    public ResponseEntity<Drink> createDrink(@Valid @RequestBody Drink drink) {
-        return ResponseEntity.ok(drinkService.createDrink(drink));
+    @GetMapping("/category")
+    public ResponseEntity<List<Object>> getByCategory(@RequestParam String category) {
+        long CountCategory = drinkService.countByCategory(category);
+        if (CountCategory == 0) {
+            return new ResponseEntity<>(HttpStatus.NOT_FOUND);
+        }
+        List<Drink> categoryList = drinkService.findByCategory(category);
+
+        List<Object> response = new ArrayList<>();
+
+        response.add(categoryList);
+        response.add(CountCategory);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+
     }
 
-    @PutMapping("/{id}")
-    public ResponseEntity<Drink> updateDrink(@PathVariable UUID id, @Valid @RequestBody Drink drink) {
-        return ResponseEntity.ok(drinkService.updateDrink(id, drink));
+    @GetMapping("/price/less")
+    public ResponseEntity<?> getByLessPrice(@RequestParam double price) {
+        long countLess = drinkService.countByPriceLessThan(price);
+        List<Drink> lessList = drinkService.findByPriceLessThan(price);
+
+        if (countLess <= 0) {
+            return new ResponseEntity<>("No drinks in that price range", HttpStatus.NOT_FOUND);
+        }
+
+        List<Object> response = new ArrayList<>();
+        response.add(countLess);
+        response.add(lessList);
+
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
 
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteDrink(@PathVariable UUID id) {
-        drinkService.deleteDrink(id);
-        return ResponseEntity.noContent().build();
+    @GetMapping("/price/greater")
+    public ResponseEntity<?> getByGreaterPrice(@RequestParam double price) {
+        long countGreater = drinkService.countByPriceGreaterThan(price);
+        List<Drink> greaterList = drinkService.findByPriceGreaterThan(price);
+        if (countGreater <= 0) {
+            return new ResponseEntity<>("No drinks in that price range", HttpStatus.NOT_FOUND);
+        }
+        List<Object> response = new ArrayList<>();
+        response.add(countGreater);
+        response.add(greaterList);
+        return new ResponseEntity<>(response, HttpStatus.OK);
     }
+
+    @GetMapping("/price/between")
+    public ResponseEntity<?> getByBetweenPrice(@RequestParam double start, @RequestParam double end) {
+        long countBetween = drinkService.countByPriceBetween(start, end);
+        List<Drink> betweenList = drinkService.findByPriceBetween(start, end);
+        if (countBetween <= 0) {
+            return new ResponseEntity<>("No drinks in that price range", HttpStatus.NOT_FOUND);
+        }
+        List<Object> response = new ArrayList<>();
+        response.add(countBetween);
+        response.add(betweenList);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
+    @GetMapping("/alcoholic")
+    public ResponseEntity<?> getByAlcoholic(@RequestParam boolean alcoholic) {
+        List<Object> response = new ArrayList<>();
+        long countBoolAlcoholic;
+        List<Drink> alcoholicBoolDrinks;
+        if (alcoholic) {
+            countBoolAlcoholic = drinkService.countAlcoholicDrinks();
+            alcoholicBoolDrinks = drinkService.AlcoholicDrinks();
+        } else {
+            countBoolAlcoholic = drinkService.countNonAlcoholicDrinks();
+            alcoholicBoolDrinks = drinkService.NonAlcoholicDrinks();
+        }
+
+        response.add(countBoolAlcoholic);
+        response.add(alcoholicBoolDrinks);
+        return new ResponseEntity<>(response, HttpStatus.OK);
+
+    }
+
+
 }
