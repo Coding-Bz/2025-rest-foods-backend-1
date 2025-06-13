@@ -34,7 +34,8 @@ public class MenuService {
     }
 
     public List<Menu> getListByAllergy(String allergy) {
-        return menuRepository.findByAllergies(allergy);
+        //return menuRepository.findByAllergies(allergy);
+        return menuRepository.findByAllergyContains(allergy);
     }
 
     public List<Menu> getListByDieteryRequirement(String dieteryRequirement) {
@@ -64,7 +65,8 @@ public class MenuService {
     }
 
     public long getCountAllergy(String allergy) {
-        return menuRepository.countByAllergies(allergy);
+        //return menuRepository.countByAllergies(allergy);
+        return menuRepository.countByAllergyContains(allergy);
     }
 
     public long getCountChefsChoice(boolean chefChoice) {
