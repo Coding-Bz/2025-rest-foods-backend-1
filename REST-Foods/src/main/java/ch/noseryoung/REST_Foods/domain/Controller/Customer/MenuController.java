@@ -126,13 +126,13 @@ public class MenuController {
     }
 
     @GetMapping("/filter")
-    public ResponseEntity<Object> getFilter(@RequestParam(required = false) Boolean choice, @RequestParam(required = false) String category, @RequestParam(required = false) String requirement, @RequestParam(required = false) int lowPrice, @RequestParam(required = false) int highPrice, @RequestParam(required = false) String allergy) {
+    public ResponseEntity<Object> getFilter(@RequestParam(required = false) Boolean choice, @RequestParam(required = false) String category, @RequestParam(required = false) String requirement, @RequestParam(required = false) Integer lowPrice, @RequestParam(required = false) Integer highPrice, @RequestParam(required = false) String allergy) {
         List<Menu> all = menuService.getAllMenus();
         List<Menu> filtered = all.stream()
                 .filter(m -> choice == null || m.getChefsChoice() == choice)
                 .filter(m -> category == null || m.getCategory().equalsIgnoreCase(category))
-                .filter(m -> highPrice == 0 || m.getPrice() <= highPrice)
-                .filter(m-> lowPrice ==0 || m.getPrice() >= lowPrice)
+                .filter(m -> highPrice == null || m.getPrice() <= highPrice)
+                .filter(m-> lowPrice == null || m.getPrice() >= lowPrice)
                 .filter(m->requirement ==null || m.getDietaryRequirements().contains(requirement))
                 .filter(m -> allergy == null || !m.getAllergies().contains(allergy))
                 .collect(Collectors.toList());

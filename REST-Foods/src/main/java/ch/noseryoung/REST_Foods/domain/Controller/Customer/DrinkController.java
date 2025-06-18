@@ -105,7 +105,10 @@ public class DrinkController {
         return new ResponseEntity<>(response, HttpStatus.OK);
 
     }
-
+    @GetMapping("/filter")
+    public ResponseEntity<Object> getFilter(@RequestParam(required = false) String category, @RequestParam(required = false) Integer lowPrice, @RequestParam(required = false) Integer highPrice,@RequestParam (required = false)Boolean alcoholic) {
+        return null;
+    }
 
 
 }
