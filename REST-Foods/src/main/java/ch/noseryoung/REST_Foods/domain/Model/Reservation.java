@@ -2,6 +2,7 @@ package ch.noseryoung.REST_Foods.domain.Model;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -35,4 +36,9 @@ public class Reservation {
 
     @NotEmpty(message = "Name can't be empty.")
     private String name;
+
+    @NotEmpty(message = "Email can't be null!")
+    @Email
+    private String email;
+
 }

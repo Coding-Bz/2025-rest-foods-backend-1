@@ -1,5 +1,7 @@
 package ch.noseryoung.REST_Foods.domain.Controller.Customer;
 
+import ch.noseryoung.REST_Foods.domain.MailAdmin.JavaMailUtil;
+import ch.noseryoung.REST_Foods.domain.Model.Drink;
 import ch.noseryoung.REST_Foods.domain.Model.Reservation;
 import ch.noseryoung.REST_Foods.domain.Service.Customer.ReservationService;
 import jakarta.validation.Valid;
@@ -30,7 +32,7 @@ public class ReservationController {
     }
 
     @PostMapping("/")
-    public ResponseEntity<Reservation> createReservation(@Valid @RequestBody Reservation reservation) {
+    public ResponseEntity<Reservation> createReservation(@Valid @RequestBody Reservation reservation) throws Exception {
         LocalDate today = LocalDate.now();
         LocalTime now = LocalTime.now();
 
@@ -44,6 +46,7 @@ public class ReservationController {
         if (reservation.getPartySize() < 1) {
             throw new IllegalArgumentException("Party size must be at least 1!");
         }
+        JavaMailUtil.sendMail(reservation.getEmail(),reservation.getName(),reservation.getDate(), reservation.getPartySize(),reservation.getTime());
         return ResponseEntity.ok(reservationService.createReservation(reservation));
     }
 

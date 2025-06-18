@@ -22,6 +22,8 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
 
     long countByName(String name);
 
+    long countByemail(String email);
+
 
     List<Reservation> findByDate(LocalDate date);
 
@@ -34,6 +36,8 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
     List<Reservation> findByDateAndTime(LocalDate date, LocalTime time);
 
     List<Reservation> findByNameAndDate(String name, LocalDate date);
+
+    List<Reservation> findByEmail(String email);
 
 
 }
