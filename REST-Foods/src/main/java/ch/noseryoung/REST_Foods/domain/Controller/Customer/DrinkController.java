@@ -107,8 +107,15 @@ public class DrinkController {
     }
     @GetMapping("/filter")
     public ResponseEntity<Object> getFilter(@RequestParam(required = false) String category, @RequestParam(required = false) Integer lowPrice, @RequestParam(required = false) Integer highPrice,@RequestParam (required = false)Boolean alcoholic) {
-        return null;
+        List<Drink> all = drinkService.getAllDrinks();
+        List<Drink> filtered = all.stream()
+                .filter(m -> alcoholic == null || m.getAlcoholic() == alcoholic)
+                .filter(m -> category == null || m.getCategory().equalsIgnoreCase(category))
+                .filter(m -> highPrice == null || m.getPrice() <= highPrice)
+                .filter(m-> lowPrice == null || m.getPrice() >= lowPrice)
+                .collect(Collectors.toList());
+
+        if (filtered.isEmpty()) return ResponseEntity.noContent().build();
+        return ResponseEntity.ok(filtered);
     }
-
-
 }
