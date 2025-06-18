@@ -36,3 +36,10 @@ Dort kannst du:
 - Alle REST-Endpunkte sehen
 - Requests direkt im Browser ausführen
 - Antworten anzeigen lassen
+
+---
+
+## Postman-Test
+
+Es gibt im Repository ein Json mit für Postman, diese kann man herunterladen und in Postman importieren.
+
