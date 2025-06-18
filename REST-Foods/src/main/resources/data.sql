@@ -102,38 +102,40 @@ VALUES
 
 
 
-INSERT INTO reservation (reservation_id, date, time, party_size, name)
-VALUES ('c7b51d10-accb-4bce-899a-051e9da21a50', '2025-08-24', '19:30', 4, 'Prof. Schmidt'),
-       ('3a46e69c-6bf6-4fc3-a440-63900c3c348e', '2025-08-24', '21:15', 5, 'Sir Bennett'),
-       ('bb219131-2e78-420f-9141-523e23ac32a9', '2025-08-13', '18:45', 1, 'Maître Ziegler'),
-       ('2c8cd910-021b-4002-a113-6f021da87889', '2025-08-15', '18:15', 2, 'Dr. Amsler'),
-       ('fe038017-622c-4743-b1f6-9bf5795f98ae', '2025-08-12', '18:00', 1, 'Mr. Tanaka'),
-       ('a7c48348-1983-4e83-9614-528e95f8cff6', '2025-08-16', '21:30', 3, 'Dr. Amsler'),
-       ('c94ead0f-7ad5-420e-bbde-6279549cabda', '2025-08-13', '21:15', 5, 'Madame Dupont'),
-       ('81064dfe-72df-498d-8560-9d1c39cdeaf7', '2025-08-12', '19:00', 2, 'Senator Rossi'),
-       ('9a8efa94-0ab6-4ad5-b237-65362a1c92f3', '2025-08-25', '19:30', 6, 'Ms. Renault'),
-       ('bc0bd18c-d2e8-4add-8379-17ef09dd848e', '2025-08-26', '18:45', 3, 'Prof. Schmidt'),
-       ('6ec83a38-c23e-4ebb-89d0-4308a1ee7207', '2025-08-15', '18:45', 2, 'Maître Ziegler'),
-       ('b09188fa-1d3b-4d14-9690-ad29ac5db433', '2025-07-17', '21:45', 4, 'Senator Rossi'),
-       ('ff7288c6-7e0f-4d04-a0cd-c39786e2c2fb', '2025-07-24', '19:00', 2, 'Maître Ziegler'),
-       ('3a31406e-6b63-48f0-8bbf-79fddc30b219', '2025-07-21', '21:00', 2, 'Sir Bennett'),
-       ('f6afac9c-c0bd-48bb-90e5-7d02551f6dd3', '2025-07-21', '21:45', 5, 'Madame Dupont'),
-       ('d7d927d5-1f58-4c12-9045-0f6fd0d77467', '2025-07-20', '19:45', 1, 'Madame Dupont'),
-       ('4c79044a-9998-4d4b-b8a0-73e3297a2430', '2025-07-14', '19:15', 4, 'Chef Anton'),
-       ('995e8912-d136-45d9-af7e-55ae32cf4981', '2025-07-15', '18:15', 2, 'Ambassador Lee'),
-       ('161f53e5-8d50-4d99-93bd-6e81b2bbf525', '2025-07-24', '19:45', 6, 'Maître Ziegler'),
-       ('5b74414a-ea2f-4da4-96a8-ac14c5f0620d', '2025-07-18', '21:45', 2, 'Lord Sinclair'),
-       ('a55d32ed-7e3c-4118-880d-f7cbe9ef1d9c', '2025-07-18', '18:15', 3, 'Senator Rossi'),
-       ('7205f6a3-4a21-44f5-b185-e6d49508fa4f', '2025-09-18', '21:15', 1, 'VIP Müller'),
-       ('5ed0f129-f195-47ee-b2f1-53ce7e4469e7', '2025-09-17', '21:45', 2, 'Prof. Schmidt'),
-       ('3ad25304-5b0f-4791-898d-676bc4cafc24', '2025-09-26', '18:45', 4, 'Madame Dupont'),
-       ('560f90b8-50da-4a0e-b637-5a7e0450f4a0', '2025-09-17', '20:30', 6, 'Mr. Tanaka'),
-       ('7829f751-da4a-49b7-b116-c3c4c3cdfc74', '2025-09-15', '21:30', 3, 'Maître Ziegler'),
-       ('60d38fb3-6721-45b2-8894-9024b9def37b', '2025-09-17', '18:15', 1, 'Chef Anton'),
-       ('fc36e574-f84f-44f7-9673-08ee270f3805', '2025-09-22', '20:45', 6, 'Sir Bennett'),
-       ('9a1f64b6-9e62-4f8a-81a5-8c830ed80465', '2025-09-23', '20:30', 1, 'Sir Bennett'),
-       ('d79c3e42-5e29-477c-a251-843a7323041a', '2025-09-12', '18:30', 6,
-        'Lord Sinclair') ON CONFLICT (reservation_id) DO NOTHING;;
+INSERT INTO reservation (reservation_id, date, time, party_size, name, email)
+VALUES
+('c7b51d10-accb-4bce-899a-051e9da21a50', '2025-08-24', '19:30', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
+('3a46e69c-6bf6-4fc3-a440-63900c3c348e', '2025-08-24', '21:15', 5, 'Sir Bennett', 'bennett.sir@royalguests.org'),
+('bb219131-2e78-420f-9141-523e23ac32a9', '2025-08-13', '18:45', 1, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
+('2c8cd910-021b-4002-a113-6f021da87889', '2025-08-15', '18:15', 2, 'Dr. Amsler', 'amsler.dr@healthconclave.ch'),
+('fe038017-622c-4743-b1f6-9bf5795f98ae', '2025-08-12', '18:00', 1, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp'),
+('a7c48348-1983-4e83-9614-528e95f8cff6', '2025-08-16', '21:30', 3, 'Dr. Amsler', 'amsler.dr@healthconclave.ch'),
+('c94ead0f-7ad5-420e-bbde-6279549cabda', '2025-08-13', '21:15', 5, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
+('81064dfe-72df-498d-8560-9d1c39cdeaf7', '2025-08-12', '19:00', 2, 'Senator Rossi', 'rossi.senator@republica.it'),
+('9a8efa94-0ab6-4ad5-b237-65362a1c92f3', '2025-08-25', '19:30', 6, 'Ms. Renault', 'renault.ms@modemode.fr'),
+('bc0bd18c-d2e8-4add-8379-17ef09dd848e', '2025-08-26', '18:45', 3, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
+('6ec83a38-c23e-4ebb-89d0-4308a1ee7207', '2025-08-15', '18:45', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
+('b09188fa-1d3b-4d14-9690-ad29ac5db433', '2025-07-17', '21:45', 4, 'Senator Rossi', 'rossi.senator@republica.it'),
+('ff7288c6-7e0f-4d04-a0cd-c39786e2c2fb', '2025-07-24', '19:00', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
+('3a31406e-6b63-48f0-8bbf-79fddc30b219', '2025-07-21', '21:00', 2, 'Sir Bennett', 'bennett.sir@royalguests.org'),
+('f6afac9c-c0bd-48bb-90e5-7d02551f6dd3', '2025-07-21', '21:45', 5, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
+('d7d927d5-1f58-4c12-9045-0f6fd0d77467', '2025-07-20', '19:45', 1, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
+('4c79044a-9998-4d4b-b8a0-73e3297a2430', '2025-07-14', '19:15', 4, 'Chef Anton', 'anton.chef@kitchenmaestros.com'),
+('995e8912-d136-45d9-af7e-55ae32cf4981', '2025-07-15', '18:15', 2, 'Ambassador Lee', 'lee.ambassador@globalforum.org'),
+('161f53e5-8d50-4d99-93bd-6e81b2bbf525', '2025-07-24', '19:45', 6, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
+('5b74414a-ea2f-4da4-96a8-ac14c5f0620d', '2025-07-18', '21:45', 2, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk'),
+('a55d32ed-7e3c-4118-880d-f7cbe9ef1d9c', '2025-07-18', '18:15', 3, 'Senator Rossi', 'rossi.senator@republica.it'),
+('7205f6a3-4a21-44f5-b185-e6d49508fa4f', '2025-09-18', '21:15', 1, 'VIP Müller', 'mueller.vip@elitesuite.de'),
+('5ed0f129-f195-47ee-b2f1-53ce7e4469e7', '2025-09-17', '21:45', 2, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
+('3ad25304-5b0f-4791-898d-676bc4cafc24', '2025-09-26', '18:45', 4, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
+('560f90b8-50da-4a0e-b637-5a7e0450f4a0', '2025-09-17', '20:30', 6, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp'),
+('7829f751-da4a-49b7-b116-c3c4c3cdfc74', '2025-09-15', '21:30', 3, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
+('60d38fb3-6721-45b2-8894-9024b9def37b', '2025-09-17', '18:15', 1, 'Chef Anton', 'anton.chef@kitchenmaestros.com'),
+('fc36e574-f84f-44f7-9673-08ee270f3805', '2025-09-22', '20:45', 6, 'Sir Bennett', 'bennett.sir@royalguests.org'),
+('9a1f64b6-9e62-4f8a-81a5-8c830ed80465', '2025-09-23', '20:30', 1, 'Sir Bennett', 'bennett.sir@royalguests.org'),
+('d79c3e42-5e29-477c-a251-843a7323041a', '2025-09-12', '18:30', 6, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk')
+ON CONFLICT (reservation_id) DO NOTHING;;
+
 
 INSERT INTO drink (drink_id, name, price, description, picture_link, alcoholic, volume, category)
 VALUES
