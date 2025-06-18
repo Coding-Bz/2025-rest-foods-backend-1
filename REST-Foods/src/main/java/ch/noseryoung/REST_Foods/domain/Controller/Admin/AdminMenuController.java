@@ -28,7 +28,7 @@ public class AdminMenuController {
     }
 
 
-    @PostMapping("/menu")
+    @PostMapping("/")
     public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu menu) {
         return new ResponseEntity<>(adminMenuService.createMenu(menu), HttpStatus.CREATED);
     }
