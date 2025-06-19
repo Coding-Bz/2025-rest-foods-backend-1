@@ -13,6 +13,7 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1/admin/menu")
+@CrossOrigin("http://localhost:5173/")
 public class AdminMenuController {
     private final AdminMenuService adminMenuService;
 

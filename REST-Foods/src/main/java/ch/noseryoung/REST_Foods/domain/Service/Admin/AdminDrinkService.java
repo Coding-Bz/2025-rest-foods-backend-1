@@ -20,10 +20,6 @@ public class AdminDrinkService {
 
     }
 
-    public Drink getDrink(UUID id) {
-        return drinkRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("There is no Drink with this id!"));
-    }
-
     public Drink createDrink(Drink drink) {
         return drinkRepository.save(drink);
     }

@@ -3,6 +3,7 @@ package ch.noseryoung.REST_Foods.domain.Controller.Customer;
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
 import ch.noseryoung.REST_Foods.domain.Model.Menu;
 import ch.noseryoung.REST_Foods.domain.Service.Customer.DrinkService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -10,10 +11,12 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/drink")
+@CrossOrigin("http://localhost:5173/")
 public class DrinkController {
     @Autowired
     DrinkService drinkService;
@@ -23,6 +26,10 @@ public class DrinkController {
         return ResponseEntity.ok(drinkService.getAllDrinks());
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<Drink> getDrink(@PathVariable UUID id) {
+        return ResponseEntity.ok(drinkService.getDrink(id));
+    }
 
     @GetMapping("/count")
     public long getDrinkCount() {

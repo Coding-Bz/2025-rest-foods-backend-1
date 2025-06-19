@@ -38,6 +38,7 @@ public class Reservation {
     private String name;
 
     @Email
+    @NotEmpty(message = "Email can't be empty")
     private String email;
 
 }

@@ -11,17 +11,11 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/admin/drink")
-
+@CrossOrigin("http://localhost:5173/")
 public class AdminDrinkController {
 
     @Autowired
     AdminDrinkService adminDrinkService;
-
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Drink> getDrink(@PathVariable UUID id) {
-        return ResponseEntity.ok(adminDrinkService.getDrink(id));
-    }
 
     @PostMapping("/")
     public ResponseEntity<Drink> createDrink(@Valid @RequestBody Drink drink) {
