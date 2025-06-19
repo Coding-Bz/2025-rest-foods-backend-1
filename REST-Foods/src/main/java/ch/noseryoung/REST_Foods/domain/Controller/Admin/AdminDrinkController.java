@@ -19,6 +19,9 @@ public class AdminDrinkController {
 
     @PostMapping("/")
     public ResponseEntity<Drink> createDrink(@Valid @RequestBody Drink drink) {
+        if (drink.getPrice() < 1) {
+            throw new IllegalArgumentException("Price of the drink can't be under 1!");
+        }
         return ResponseEntity.ok(adminDrinkService.createDrink(drink));
     }
 

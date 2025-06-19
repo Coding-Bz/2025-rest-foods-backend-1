@@ -31,6 +31,9 @@ public class AdminMenuController {
 
     @PostMapping("/")
     public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu menu) {
+        if (menu.getPrice() < 1) {
+            throw new IllegalArgumentException("Price of the menu can't be under 1!");
+        }
         return new ResponseEntity<>(adminMenuService.createMenu(menu), HttpStatus.CREATED);
     }
 
