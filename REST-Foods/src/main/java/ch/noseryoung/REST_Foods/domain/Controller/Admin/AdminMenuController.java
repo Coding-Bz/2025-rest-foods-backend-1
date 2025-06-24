@@ -13,7 +13,11 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1/admin/menu")
+<<<<<<< Updated upstream
 @CrossOrigin("http://localhost:5173/")
+=======
+@CrossOrigin(origins = "http://localhost:5173")
+>>>>>>> Stashed changes
 public class AdminMenuController {
     private final AdminMenuService adminMenuService;
 

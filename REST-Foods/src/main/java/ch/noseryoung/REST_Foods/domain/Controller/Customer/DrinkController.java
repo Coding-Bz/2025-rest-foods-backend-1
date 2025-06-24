@@ -16,7 +16,12 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/v1/drink")
+<<<<<<< Updated upstream
 @CrossOrigin("http://localhost:5173/")
+=======
+@CrossOrigin(origins = "http://localhost:5173")
+
+>>>>>>> Stashed changes
 public class DrinkController {
     @Autowired
     DrinkService drinkService;
