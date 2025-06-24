@@ -102,39 +102,65 @@ values
 
 
 
-insert into reservation (reservation_id, date, time, party_size, name, email)
-values
-('c7b51d10-accb-4bce-899a-051e9da21a50', '2025-08-24', '19:30', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
-('3a46e69c-6bf6-4fc3-a440-63900c3c348e', '2025-08-24', '21:15', 5, 'Sir Bennett', 'bennett.sir@royalguests.org'),
-('bb219131-2e78-420f-9141-523e23ac32a9', '2025-08-13', '18:45', 1, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
-('2c8cd910-021b-4002-a113-6f021da87889', '2025-08-15', '18:15', 2, 'Dr. Amsler', 'amsler.dr@healthconclave.ch'),
-('fe038017-622c-4743-b1f6-9bf5795f98ae', '2025-08-12', '18:00', 1, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp'),
-('a7c48348-1983-4e83-9614-528e95f8cff6', '2025-08-16', '21:30', 3, 'Dr. Amsler', 'amsler.dr@healthconclave.ch'),
-('c94ead0f-7ad5-420e-bbde-6279549cabda', '2025-08-13', '21:15', 5, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
-('81064dfe-72df-498d-8560-9d1c39cdeaf7', '2025-08-12', '19:00', 2, 'Senator Rossi', 'rossi.senator@republica.it'),
-('9a8efa94-0ab6-4ad5-b237-65362a1c92f3', '2025-08-25', '19:30', 6, 'Ms. Renault', 'renault.ms@modemode.fr'),
-('bc0bd18c-d2e8-4add-8379-17ef09dd848e', '2025-08-26', '18:45', 3, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
-('6ec83a38-c23e-4ebb-89d0-4308a1ee7207', '2025-08-15', '18:45', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
-('b09188fa-1d3b-4d14-9690-ad29ac5db433', '2025-07-17', '21:45', 4, 'Senator Rossi', 'rossi.senator@republica.it'),
-('ff7288c6-7e0f-4d04-a0cd-c39786e2c2fb', '2025-07-24', '19:00', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
-('3a31406e-6b63-48f0-8bbf-79fddc30b219', '2025-07-21', '21:00', 2, 'Sir Bennett', 'bennett.sir@royalguests.org'),
-('f6afac9c-c0bd-48bb-90e5-7d02551f6dd3', '2025-07-21', '21:45', 5, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
-('d7d927d5-1f58-4c12-9045-0f6fd0d77467', '2025-07-20', '19:45', 1, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
-('4c79044a-9998-4d4b-b8a0-73e3297a2430', '2025-07-14', '19:15', 4, 'Chef Anton', 'anton.chef@kitchenmaestros.com'),
-('995e8912-d136-45d9-af7e-55ae32cf4981', '2025-07-15', '18:15', 2, 'Ambassador Lee', 'lee.ambassador@globalforum.org'),
-('161f53e5-8d50-4d99-93bd-6e81b2bbf525', '2025-07-24', '19:45', 6, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
-('5b74414a-ea2f-4da4-96a8-ac14c5f0620d', '2025-07-18', '21:45', 2, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk'),
-('a55d32ed-7e3c-4118-880d-f7cbe9ef1d9c', '2025-07-18', '18:15', 3, 'Senator Rossi', 'rossi.senator@republica.it'),
-('7205f6a3-4a21-44f5-b185-e6d49508fa4f', '2025-09-18', '21:15', 1, 'VIP Müller', 'mueller.vip@elitesuite.de'),
-('5ed0f129-f195-47ee-b2f1-53ce7e4469e7', '2025-09-17', '21:45', 2, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
-('3ad25304-5b0f-4791-898d-676bc4cafc24', '2025-09-26', '18:45', 4, 'Madame Dupont', 'dupont.madame@artisansfrance.fr'),
-('560f90b8-50da-4a0e-b637-5a7e0450f4a0', '2025-09-17', '20:30', 6, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp'),
-('7829f751-da4a-49b7-b116-c3c4c3cdfc74', '2025-09-15', '21:30', 3, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
-('60d38fb3-6721-45b2-8894-9024b9def37b', '2025-09-17', '18:15', 1, 'Chef Anton', 'anton.chef@kitchenmaestros.com'),
-('fc36e574-f84f-44f7-9673-08ee270f3805', '2025-09-22', '20:45', 6, 'Sir Bennett', 'bennett.sir@royalguests.org'),
-('9a1f64b6-9e62-4f8a-81a5-8c830ed80465', '2025-09-23', '20:30', 1, 'Sir Bennett', 'bennett.sir@royalguests.org'),
-('d79c3e42-5e29-477c-a251-843a7323041a', '2025-09-12', '18:30', 6, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk')
+INSERT INTO reservation (reservation_id, date, time, party_size, name, email, seatid, telephone_number)
+VALUES
+('301a1f5e-bf91-47c3-bb1a-9e13d3e91407', '2025-08-01', '18:00', 2, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp', '5e64cf4d-f022-4f71-9186-84a7e78e6a01', '+81 3 1234 5678'),
+('77d36484-d8e4-4b85-9f84-ef1b98d0c3e9', '2025-08-02', '21:00', 2, 'Chef Anton', 'anton.chef@kitchenmaestros.com', '5e64cf4d-f022-4f71-9186-84a7e78e6a01', '+41 77 900 44 22'),
+('baf41670-9fd2-4402-b8f0-0bb6e7715b0a', '2025-08-01', '19:00', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com', '1e354d55-4b43-4ed0-bfa1-3fd56b8dbff0', '+41 78 321 54 76'),
+('8a6bc66c-9183-4fc6-8d82-2f92e8c0d3db', '2025-08-02', '20:00', 6, 'Sir Bennett', 'bennett.sir@royalguests.org', 'f7a8d8e0-901d-4af6-9962-314f60ac01d3', '+44 20 7946 0034'),
+('c68d08a4-d690-4411-bab2-d2281ac010ee', '2025-08-03', '18:15', 2, 'Dr. Amsler', 'amsler.dr@healthconclave.ch', '3a7f8223-9f3e-4d06-8d86-62b59acb22e5', '+41 79 555 88 66'),
+('ac4e82cf-bb55-4552-bb8c-dcc5eb3ccf40', '2025-08-03', '19:30', 4, 'Chef Anton', 'anton.chef@kitchenmaestros.com', '67b4d6bc-5389-4899-8729-419db6c20c9d', '+41 77 900 44 22'),
+('edf58203-d01d-4532-b491-efb7ccf0dd6f', '2025-08-04', '20:30', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net', 'b18c93a1-623b-4f57-bc7b-b79dcdd36511', '+41 78 000 11 11'),
+('8db5c61b-9475-4b19-a264-6c49897dd2b3', '2025-08-05', '19:15', 6, 'Madame Dupont', 'dupont.madame@artisansfrance.fr', 'de43028e-553b-4e36-b9cc-339ad287c899', '+33 1 42 24 75 22'),
+('a5cb59fd-3eac-4f42-8e2e-14e42cc2e8ea', '2025-08-06', '18:00', 2, 'VIP Müller', 'mueller.vip@elitesuite.de', 'e2b80a62-c22f-41f9-80f6-043f07ec4dbb', '+49 89 123 45 67'),
+('39d6fbe0-b993-4bfa-8460-d02f7eac1b5f', '2025-08-06', '21:30', 4, 'Ms. Renault', 'renault.ms@modemode.fr', '9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968', '+33 6 11 22 33 44'),
+('4ee3bebb-6a56-42a9-8b47-687f7c52f23f', '2025-08-07', '20:45', 2, 'Ambassador Lee', 'lee.ambassador@globalforum.org', '21c185d3-8815-4a18-bbc1-0e7ce3ff473c', '+82 2 3456 7890'),
+('58947bc0-06fd-4623-871a-cb9492c4978e', '2025-08-08', '19:00', 4, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk', 'c0d2c691-fb35-4c16-9949-1a8e957fd340', '+44 131 555 6789'),
+('a453bc93-b39e-42a2-bff7-d9be83707c95', '2025-08-08', '21:15', 2, 'Chef Anton', 'anton.chef@kitchenmaestros.com', 'f89ee46c-6aeb-4f92-b32a-d58edcf3c33d', '+41 77 900 44 22'),
+('e8cfad02-2cd7-491e-b0ce-3e3bd9c6d933', '2025-08-09', '18:30', 6, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp', 'a21b9e3c-35bb-4f45-8195-589e1850cb67', '+81 3 1234 5678'),
+('93b3f5dc-3826-4d69-8ef7-3be453b45cfa', '2025-08-10', '19:45', 2, 'Senator Rossi', 'rossi.senator@republica.it', 'd4fa2a25-28c1-48d2-8c9e-29df4a0ddfab', '+39 06 6988 1234'),
+('5c053cb1-8f44-4c11-a861-8377dfc19aaf', '2025-08-11', '18:00', 4, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net', '0a5e7d7d-90b9-40c6-b5d9-56dff4a1b786', '+41 78 000 11 11'),
+('8a2b0f6a-4785-4f2e-bb94-73d6b9468b1c', '2025-08-11', '20:00', 2, 'VIP Müller', 'mueller.vip@elitesuite.de', '9ff9a64d-693f-4e8b-9e5f-72d7d6c17803', '+49 89 123 45 67'),
+('11450d15-ec62-4464-84cd-09a9fd4c155b', '2025-08-12', '21:30', 6, 'Sir Bennett', 'bennett.sir@royalguests.org', 'cf9e1c2b-bb8d-464a-8824-6cd2e6aa31e2', '+44 20 7946 0034'),
+('285b1c41-b39b-4ec7-937b-2fd7b02d4f6e', '2025-08-13', '19:00', 4, 'Ms. Renault', 'renault.ms@modemode.fr', '18db7eb7-fb8a-4209-b0ce-32e3a6d14a98', '+33 6 11 22 33 44'),
+('38cb7c6d-e139-48b1-bcc5-06066b973cab', '2025-08-13', '20:30', 2, 'Madame Dupont', 'dupont.madame@artisansfrance.fr', 'd6a6cb67-fae2-4142-81a2-9f8dbb9a1778', '+33 1 42 24 75 22'),
+('90c373e3-8d3f-4e4c-8e58-1c2a2fd03b47', '2025-08-14', '18:15', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com', 'ae67e19b-1ea5-4e34-a273-cf8f9a6ad8cb', '+41 78 321 54 76'),
+('fd3c0eb0-11a0-4dbb-97f1-3fd62e2b1653', '2025-08-15', '21:00', 4, 'Ambassador Lee', 'lee.ambassador@globalforum.org', '0a5e7d7d-90b9-40c6-b5d9-56dff4a1b786', '+82 2 3456 7890'),
+('5c79b567-0bc3-45b4-9c4e-36dfae8b6f91', '2025-08-16', '19:30', 6, 'Mr. Tanaka', 'tanaka.mr@pacificmail.jp', 'cf9e1c2b-bb8d-464a-8824-6cd2e6aa31e2', '+81 3 1234 5678'),
+('d8a62c5c-88c5-4e9b-93a6-901c2bcb26bb', '2025-08-17', '20:00', 2, 'VIP Müller', 'mueller.vip@elitesuite.de', 'f89ee46c-6aeb-4f92-b32a-d58edcf3c33d', '+49 89 123 45 67'),
+('e2374a3e-1333-4f91-9b0e-1e8d3e0a5f67', '2025-08-18', '18:30', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com', 'ae67e19b-1ea5-4e34-a273-cf8f9a6ad8cb', '+41 78 321 54 76'),
+('90c9d7cb-7652-40fd-b073-831426de7a1c', '2025-08-18', '21:15', 2, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net', 'd4fa2a25-28c1-48d2-8c9e-29df4a0ddfab', '+41 78 000 11 11'),
+('c8b4cc1b-b49b-4be2-822a-6331df5fa3ae', '2025-08-19', '19:00', 6, 'Sir Bennett', 'bennett.sir@royalguests.org', 'de43028e-553b-4e36-b9cc-339ad287c899', '+44 20 7946 0034'),
+('e690cce6-c71d-43a2-a3f2-1107d3e26455', '2025-08-19', '20:45', 2, 'Chef Anton', 'anton.chef@kitchenmaestros.com', 'b18c93a1-623b-4f57-bc7b-b79dcdd36511', '+41 77 900 44 22'),
+('32159d8e-002c-4193-b121-2a2c9ecb14ff', '2025-08-20', '21:00', 4, 'Ms. Renault', 'renault.ms@modemode.fr', '67b4d6bc-5389-4899-8729-419db6c20c9d', '+33 6 11 22 33 44'),
+('45a2a7fd-f6d3-43b2-8ae4-2e4a2a4bd35d', '2025-08-20', '18:15', 2, 'Lord Sinclair', 'sinclair.lord@noblesociety.uk', '21c185d3-8815-4a18-bbc1-0e7ce3ff473c', '+44 131 555 6789'),
+('f3cc7269-41c0-4dcf-b601-ff7619f6047f', '2025-08-21', '19:30', 4, 'Madame Dupont', 'dupont.madame@artisansfrance.fr', '1e354d55-4b43-4ed0-bfa1-3fd56b8dbff0', '+33 1 42 24 75 22')
 ON CONFLICT (reservation_id) DO NOTHING;;
+
+
+INSERT INTO seats (table_id, table_capacity, location) VALUES
+('5e64cf4d-f022-4f71-9186-84a7e78e6a01', 2, 'Window'),
+('1e354d55-4b43-4ed0-bfa1-3fd56b8dbff0', 4, 'Main Hall'),
+('f7a8d8e0-901d-4af6-9962-314f60ac01d3', 6, 'Terrace'),
+('3a7f8223-9f3e-4d06-8d86-62b59acb22e5', 2, 'Balcony'),
+('67b4d6bc-5389-4899-8729-419db6c20c9d', 4, 'Main Hall'),
+('b18c93a1-623b-4f57-bc7b-b79dcdd36511', 2, 'Window'),
+('de43028e-553b-4e36-b9cc-339ad287c899', 6, 'Private Room'),
+('e2b80a62-c22f-41f9-80f6-043f07ec4dbb', 2, 'Corner'),
+('9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968', 4, 'Main Hall'),
+('21c185d3-8815-4a18-bbc1-0e7ce3ff473c', 2, 'Terrace'),
+('c0d2c691-fb35-4c16-9949-1a8e957fd340', 4, 'Window'),
+('f89ee46c-6aeb-4f92-b32a-d58edcf3c33d', 2, 'Balcony'),
+('a21b9e3c-35bb-4f45-8195-589e1850cb67', 6, 'Private Room'),
+('d4fa2a25-28c1-48d2-8c9e-29df4a0ddfab', 2, 'Garden'),
+('0a5e7d7d-90b9-40c6-b5d9-56dff4a1b786', 4, 'Main Hall'),
+('9ff9a64d-693f-4e8b-9e5f-72d7d6c17803', 2, 'Window'),
+('cf9e1c2b-bb8d-464a-8824-6cd2e6aa31e2', 6, 'Private Room'),
+('18db7eb7-fb8a-4209-b0ce-32e3a6d14a98', 4, 'Terrace'),
+('d6a6cb67-fae2-4142-81a2-9f8dbb9a1778', 2, 'Corner'),
+('ae67e19b-1ea5-4e34-a273-cf8f9a6ad8cb', 4, 'Window')
+ON CONFLICT (table_id) DO NOTHING;;
+
 
 
 insert into drink (drink_id, name, price, description, picture_link, alcoholic, volume, category)
