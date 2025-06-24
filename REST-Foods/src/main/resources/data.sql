@@ -172,7 +172,7 @@ values
  ('50936d58-f5d6-490e-96ed-3c50417b5609', 'Premium Calvados XO', 98,
  'Rich apple brandy from Normandy with nutty, warm spice notes',
  'https://www.calvados-boulard.com/wp-content/uploads/2020/09/auguste-xo-boulard-calvados-spiritueux-premium.png',
- true, 0.7, 'spirits')
+ true, 0.7, 'spirits'),
 ('c45f57c4-018f-4742-8c9d-9a4efc13ff54', 'Cold Brew Coffee', 9, 'Smooth and aromatic, served chilled',
  'https://content.jdmagicbox.com/v2/comp/mumbai/w7/022pxx22.xx22.240730160153.f4w7/catalogue/every-morning-cartel-mumbai-coffee-shops-3s65ky5cpd-250.jpg', FALSE, 0.3, 'coffee'),
 ('d69868b2-3e6d-48a3-93b2-4dc83f83b729', 'Grand Cru Riesling', 75, 'Floral aromas and crisp acidity from Alsace',
