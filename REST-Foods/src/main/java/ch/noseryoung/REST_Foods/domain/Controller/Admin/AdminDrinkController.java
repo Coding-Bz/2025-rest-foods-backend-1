@@ -17,6 +17,9 @@ import java.util.UUID;
 
 @CrossOrigin(origins = "http://localhost:5173")
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 public class AdminDrinkController {
 
