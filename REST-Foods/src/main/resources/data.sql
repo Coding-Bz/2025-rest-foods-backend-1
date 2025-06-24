@@ -1,109 +1,109 @@
-INSERT INTO menu (
+insert into menu (
     menu_id, name, price, category, dietary_requirements, allergies,
     description, chefs_choice, picture_link
 )
-VALUES
+values
     ('9cd13896-e2c2-4e8a-972d-5a56add46403', 'Caviar & Oyster', 72, 'starter', 'pescatarian', 'shellfish',
-     'Freshly shucked oysters with Beluga caviar, lemon foam.', TRUE,
+     'Freshly shucked oysters with Beluga caviar, lemon foam.', true,
      'https://pbs.twimg.com/media/Df08llSWkAU-r-t.jpg:large'),
 
     ('db0d7374-63db-4bbf-b48f-29a6f4f58717', 'Wagyu Tenderloin', 130, 'main', 'none', '',
-     'A5 Wagyu tenderloin with truffle demi-glace and parsnip purée.', TRUE,
+     'A5 Wagyu tenderloin with truffle demi-glace and parsnip purée.', true,
      'https://jlec-pr.jp/wp-content/uploads/2022/03/recipe09.jpg'),
 
     ('b30080a7-dfbc-47b9-b8cc-377dc83fdf8e', 'Lobster Bisque', 48, 'starter', 'pescatarian', 'shellfish,dairy',
-     'Classic French bisque with lobster medallions and cognac cream.', FALSE,
+     'Classic French bisque with lobster medallions and cognac cream.', false,
      'https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/dbmchysf/4e932837-d84b-459e-b990-c0475f1d0272.jpg'),
 
     ('df588aca-1a4e-42c9-94eb-8b30e46dac64', 'White Asparagus Velouté', 39, 'starter', 'vegetarian', 'dairy',
-     'Creamy velouté of white asparagus with poached quail egg.', FALSE,
+     'Creamy velouté of white asparagus with poached quail egg.', false,
      'https://www.lametairie-gourdon.com/wp-content/uploads/news-recipe-white-asparagus-veloute.jpg'),
 
     ('11ae1b5e-f8b7-45fc-a2e1-486de8551bdd', 'Seared Scallops', 58, 'starter', 'pescatarian', 'shellfish',
-     'Pan-seared scallops with cauliflower purée and crispy pancetta.', TRUE,
+     'Pan-seared scallops with cauliflower purée and crispy pancetta.', true,
      'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2018/08/08/fb8f96d6ff2648cc94dd65651c14f06a_P1055322.JPG'),
 
     ('bd6d7ce1-0f18-46fd-adeb-10f109e8d5ab', 'Black Cod Miso', 69, 'main', 'pescatarian', 'soy,fish',
-     'Alaskan black cod marinated in miso, served with daikon.', TRUE,
+     'Alaskan black cod marinated in miso, served with daikon.', true,
      'https://media-cdn2.greatbritishchefs.com/media/m2adrkxs/img11447.jpg'),
 
     ('757f7859-f5be-4c3f-9b49-3afb1f113f5a', 'Risotto al Tartufo', 55, 'main', 'vegetarian', 'dairy',
-     'Creamy truffle risotto finished with aged parmesan.', TRUE,
+     'Creamy truffle risotto finished with aged parmesan.', true,
      'https://www.donnamoderna.com/content/uploads/2014/04/risotto-con-spumante-castelmagno-e-tartufo-e1580313246484-830x625.jpg'),
 
     ('e5a9fb58-93be-4a27-ba3c-044090831680', 'Beetroot Carpaccio', 34, 'starter', 'vegan', '',
-     'Thin-sliced beets with cashew cream and microgreens.', FALSE,
+     'Thin-sliced beets with cashew cream and microgreens.', false,
      'https://pbs.twimg.com/media/Dknu6ABW0AENOy1.jpg'),
 
     ('3a0705ec-ecbb-4813-b081-55e2d05880f1', 'Duck à l’Orange', 74, 'main', 'none', '',
-     'Crispy duck breast with blood orange reduction.', FALSE,
+     'Crispy duck breast with blood orange reduction.', false,
      'https://media-cdn2.greatbritishchefs.com/media/qlanclco/img87388.whqc_768x512q90.jpg'),
 
     ('ce6ba15a-d5fe-4308-8300-c12bb0ef00b7', 'Chocolate Soufflé', 29, 'dessert', 'vegetarian', 'dairy,eggs',
-     'Warm dark chocolate soufflé with vanilla crème anglaise.', TRUE,
+     'Warm dark chocolate soufflé with vanilla crème anglaise.', true,
      'https://media-cdn2.greatbritishchefs.com/media/hhycy2hu/img35062.jpg'),
 
     ('538164d2-61dc-482f-96b5-061e5d33748f', 'Foie Gras Torchon', 65, 'starter', 'none', 'dairy',
-     'Traditional foie gras with brioche and fig compote.', TRUE,
+     'Traditional foie gras with brioche and fig compote.', true,
      'https://anythingalsoeat.wordpress.com/wp-content/uploads/2015/08/duck-foie-gras.jpg'),
 
     ('e9cca8c8-9df6-4e95-818f-2f47ecb2457a', 'Langoustine Ravioli', 62, 'starter', 'pescatarian', 'shellfish,gluten',
-     'Delicate ravioli filled with langoustine in bisque foam.', TRUE,
+     'Delicate ravioli filled with langoustine in bisque foam.', true,
      'https://media-cdn2.greatbritishchefs.com/media/ejbdfwct/img48413.whqc_660x440q80.jpg'),
 
     ('9c68378b-8e2e-42ec-b6d0-d15694a5eb73', 'King Crab Salad', 52, 'starter', 'pescatarian', 'shellfish',
-     'Alaskan king crab with avocado mousse and yuzu dressing.', FALSE,
+     'Alaskan king crab with avocado mousse and yuzu dressing.', false,
      'https://magazine.canaves.com/wp-content/uploads/2020/04/Petra-Restaurant-gastronomy-1-min.jpg'),
 
     ('df480263-61cd-4783-99ba-bfeb741d2cf9', 'Roasted Pigeon', 79, 'main', 'none', '',
-     'Roasted pigeon breast with beet glaze and foie gras jus.', FALSE,
+     'Roasted pigeon breast with beet glaze and foie gras jus.', false,
      'https://media-cdn2.greatbritishchefs.com/media/qfritwrj/img16682.jpg'),
 
     ('072be544-9748-4da2-90b3-fc21165435a3', 'Saffron Risotto', 49, 'main', 'vegetarian', 'dairy',
-     'Golden saffron risotto with pecorino and edible flowers.', FALSE,
+     'Golden saffron risotto with pecorino and edible flowers.', false,
      'https://www.four-magazine.com/wp-content/uploads/2021/05/0B4A7936-Edit-e1622530937466.jpg'),
 
     ('57b4d0a9-a30e-44e5-a0b5-968fc7bc0bfb', 'Veal Sweetbreads', 75, 'main', 'none', 'dairy',
-     'Pan-seared veal sweetbreads with mushroom duxelles.', TRUE,
+     'Pan-seared veal sweetbreads with mushroom duxelles.', true,
      'https://media-cdn2.greatbritishchefs.com/media/evzgwxuc/img33005.jpg'),
 
     ('ee17d4ef-f83a-4cd7-82e6-de0af125c5f0', 'Truffle Gnocchi', 54, 'main', 'vegetarian', 'dairy,gluten',
-     'House-made gnocchi with black truffle cream sauce.', TRUE,
+     'House-made gnocchi with black truffle cream sauce.', true,
      'https://districtfray.com/wp-content/uploads/2022/01/CENTROLINATRUFFLES_0018-scaled.jpg'),
 
     ('ab7dcad4-e5fd-4a71-a503-54772422c4b9', 'Pumpkin Consommé', 36, 'starter', 'vegan', '',
-     'Clear pumpkin broth with autumn vegetables.', FALSE,
+     'Clear pumpkin broth with autumn vegetables.', false,
      'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2022/10/26/09ba50ec08ed4640bcec9b4deb333b27_Pic_2_Hero.jpg'),
 
     ('75eab65a-097f-4932-af9c-a674c67b3be8', 'Lamb Loin Provencal', 83, 'main', 'none', '',
-     'Herb-crusted lamb loin with olive tapenade and jus.', TRUE,
+     'Herb-crusted lamb loin with olive tapenade and jus.', true,
      'https://woody.cloudly.space/app/uploads/crt-paca/2022/03/thumbs/agneau-de-sisteron-provence-as14415203-bratwustle-1920x960.jpeg'),
 
     ('8c52c699-d225-4332-ae90-9a9b47b6c3e0', 'Pistachio Opera Cake', 33, 'dessert', 'vegetarian', 'nuts,dairy,gluten',
-     'Layered pistachio sponge with ganache and cream.', TRUE,
+     'Layered pistachio sponge with ganache and cream.', true,
      'https://i.pinimg.com/736x/ad/26/8a/ad268a0c74308bf195d5be8992a31f6d.jpg'),
 
     ('6349e6f3-b262-4a2f-b795-7e01b89b7447', 'Chocolate Fondant', 18, 'dessert', 'vegetarian', 'gluten,dairy',
-     'Warm molten chocolate cake with vanilla ice cream.', TRUE,
+     'Warm molten chocolate cake with vanilla ice cream.', true,
      'https://media-cdn2.greatbritishchefs.com/media/vqdlvov1/img9530.whqc_768x512q90.jpg'),
 
     ('286ad30f-91d4-48b4-9765-52df5b7f913f', 'Lemon Tart with Meringue', 16, 'dessert', 'vegetarian', 'eggs,dairy,gluten',
-     'Tangy lemon curd with caramelized meringue on a buttery crust.', FALSE,
+     'Tangy lemon curd with caramelized meringue on a buttery crust.', false,
      'https://media-cdn2.greatbritishchefs.com/media/kkaodzwl/img40264.whqc_1426x713q80.jpg'),
 
     ('ff45b058-50fc-4fc4-8fb4-aeb358679706', 'Crème Brûlée', 17, 'dessert', 'vegetarian', 'eggs,dairy',
-     'Classic vanilla custard with a caramelized sugar crust.', TRUE,
+     'Classic vanilla custard with a caramelized sugar crust.', true,
      'https://d3h1lg3ksw6i6b.cloudfront.net/media/image/2018/08/27/5e28b91f8b6345b7bd6ba777d8c68410_db_bistro_moderne_credit_restaurant.jpg'),
 
     ('89468c12-6964-49e3-87c7-3445f1bffc16', 'Mille-Feuille', 20, 'dessert', 'vegetarian', 'gluten,dairy',
-     'Layered puff pastry with vanilla cream and icing.', FALSE,
+     'Layered puff pastry with vanilla cream and icing.', false,
      'https://www.thelondoneconomic.com/uploads/2021/04/56c26af6-image001-6-scaled.jpg?height=375&width=500&cropped') ON CONFLICT (menu_id) DO NOTHING;;
 
 
 
 
-INSERT INTO reservation (reservation_id, date, time, party_size, name, email)
-VALUES
+insert into reservation (reservation_id, date, time, party_size, name, email)
+values
 ('c7b51d10-accb-4bce-899a-051e9da21a50', '2025-08-24', '19:30', 4, 'Prof. Schmidt', 'schmidt.prof@prestige-mail.com'),
 ('3a46e69c-6bf6-4fc3-a440-63900c3c348e', '2025-08-24', '21:15', 5, 'Sir Bennett', 'bennett.sir@royalguests.org'),
 ('bb219131-2e78-420f-9141-523e23ac32a9', '2025-08-13', '18:45', 1, 'Maître Ziegler', 'ziegler.maitre@culinarysociety.net'),
@@ -137,30 +137,42 @@ VALUES
 ON CONFLICT (reservation_id) DO NOTHING;;
 
 
-INSERT INTO drink (drink_id, name, price, description, picture_link, alcoholic, volume, category)
-VALUES
+insert into drink (drink_id, name, price, description, picture_link, alcoholic, volume, category)
+values
 ('1b8c2e90-998e-4f9b-bc9e-1abf3f83a1e1', 'Château Margaux 2015', 220, 'Premier Grand Cru Classé from Bordeaux',
- 'https://hrd-live.cdn.scayle.cloud/images/ded99ea5b7933dfb88ac3c6b200683af.jpg?quality=75', TRUE, 0.75, 'wine'),
+ 'https://hrd-live.cdn.scayle.cloud/images/ded99ea5b7933dfb88ac3c6b200683af.jpg?quality=75', true, 0.75, 'wine'),
 ('2f7dd12c-3d0c-4dd1-8cb4-beb8f99227c4', 'Dom Pérignon Vintage 2012', 180, 'Iconic vintage champagne with rich complexity',
- 'https://premiumbottles.dk/cdn/shop/files/Dom_Perignon_initialer_Blanc_LA_MB.jpg?v=1743100858', TRUE, 0.75, 'sparkling'),
+ 'https://premiumbottles.dk/cdn/shop/files/Dom_Perignon_initialer_Blanc_LA_MB.jpg?v=1743100858', true, 0.75, 'sparkling'),
 ('3a16c7d9-0df3-4a35-8d35-e4e0cb172cf7', 'Evian Mineral Water', 6, 'Natural spring water from the French Alps',
- 'https://beverageuniverse.com/media/catalog/product/cache/d6b24e0b635c0897113a74c0029895da/e/v/evian-ivoo-evanglas25-main.jpg', FALSE, 0.5, 'water'),
+ 'https://beverageuniverse.com/media/catalog/product/cache/d6b24e0b635c0897113a74c0029895da/e/v/evian-ivoo-evanglas25-main.jpg', false, 0.5, 'water'),
 ('490ef43b-1a0e-4f70-bcc2-e8129d2f4c1b', 'San Pellegrino Sparkling', 7, 'Lightly carbonated mineral water',
- 'https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2022-11/sp-img-gallery-product-750-glass.jpg', FALSE, 0.5, 'sparkling'),
+ 'https://www.sanpellegrino.com/us/sites/g/files/xknfdk2166/files/2022-11/sp-img-gallery-product-750-glass.jpg', false, 0.5, 'sparkling'),
 ('5d1c47a1-e31f-4f6b-9be4-7ad74a9c1c9d', 'Chardonnay Grand Reserve', 95, 'Creamy, oak-aged white wine from Burgundy',
- 'https://ocave.ch/wp-content/uploads/2023/09/Champagne-Gallimard-Chardonnay-Grande-Reserve.jpg', TRUE, 0.75, 'wine'),
+ 'https://ocave.ch/wp-content/uploads/2023/09/Champagne-Gallimard-Chardonnay-Grande-Reserve.jpg', true, 0.75, 'wine'),
 ('642c8d7e-d021-4e60-8f7b-ff48d1e94498', 'Organic Apple Juice', 8, 'Cold-pressed juice from organic apples',
- 'https://online.citysuper.com.hk/cdn/shop/products/301480230-1-daylesford-organic-apple-juice-750ml_1024x1024.jpg?v=1661393429', FALSE, 0.3, 'juice'),
+ 'https://online.citysuper.com.hk/cdn/shop/products/301480230-1-daylesford-organic-apple-juice-750ml_1024x1024.jpg?v=1661393429', false, 0.3, 'juice'),
 ('75aefa2b-9b64-45dc-9a33-57f0c65e7d9d', 'Sauvignon Blanc', 55, 'Crisp and refreshing white wine',
- 'https://baythornewines.co.uk/cdn/shop/products/WeissburgunderMeran-2.jpg?v=1650463107', TRUE, 0.75, 'wine'),
+ 'https://baythornewines.co.uk/cdn/shop/products/WeissburgunderMeran-2.jpg?v=1650463107', true, 0.75, 'wine'),
 ('8c7bff15-dfd1-4f31-96e4-e1189ef0bcb3', 'Japanese Umeshu Plum Wine', 60, 'Sweet-sour flavor with subtle fruit notes',
- 'https://cdn11.bigcommerce.com/s-ji18vmeuwa/products/1132/images/1390/10243-1-Gekkeikan-Umeshu-Plum-Wine-Large%25253Fw%25253D1200%252526h%25253D1200%252526sm%25253Dc%252526fmt%25253Dauto__58051.1687531340.1280.1280.jpg?c=1', TRUE, 0.5, 'wine'),
+ 'https://cdn11.bigcommerce.com/s-ji18vmeuwa/products/1132/images/1390/10243-1-Gekkeikan-Umeshu-Plum-Wine-Large%25253Fw%25253D1200%252526h%25253D1200%252526sm%25253Dc%252526fmt%25253Dauto__58051.1687531340.1280.1280.jpg?c=1', true, 0.5, 'wine'),
 ('98ed5a4e-d358-4764-9b08-c8e1c3cdd4ee', 'Barolo DOCG 2016', 135, 'Robust red wine from Piemonte',
- 'https://s.tannico.it/media/catalog/product/cache/51/thumbnail/0dc2d03fe217f8c83829496872af24a0/p/r/prunotto-barolo_1_2.jpg', TRUE, 0.75, 'wine'),
+ 'https://s.tannico.it/media/catalog/product/cache/51/thumbnail/0dc2d03fe217f8c83829496872af24a0/p/r/prunotto-barolo_1_2.jpg', true, 0.75, 'wine'),
 ('a27ec8ab-f6fb-4f6d-a45e-d7dd3ae82387', 'Sparkling Elderflower Tonic', 10, 'Elegant non-alcoholic floral drink',
- 'https://digitalcontent.api.tesco.com/v2/media/ghs/46295eca-27fe-4a61-b0fa-8e5a7dfc222d/f345fce5-6005-4f66-b4d2-08e98d08992f_857846522.jpeg?h=960&w=960', FALSE, 0.25, 'soft'),
+ 'https://digitalcontent.api.tesco.com/v2/media/ghs/46295eca-27fe-4a61-b0fa-8e5a7dfc222d/f345fce5-6005-4f66-b4d2-08e98d08992f_857846522.jpeg?h=960&w=960', false, 0.25, 'soft'),
 ('b3c9cc6b-ff29-49fc-8267-cdd7cf1532f3', 'Single Malt Scotch – 18 Years', 150, 'Rich and smoky with notes of oak and vanilla',
- 'https://drinks-and-style.ch/wp-content/uploads/2020/05/Highland-Park_18yo.jpg', TRUE, 0.05, 'spirits'),
+ 'https://drinks-and-style.ch/wp-content/uploads/2020/05/Highland-Park_18yo.jpg', true, 0.05, 'spirits'),
+ ('e3cb8f75-2d3a-456c-8bc1-4cd9d4e74b91', 'Highland Single Malt – 21 Years', 175,
+ 'Elegant whisky with floral peat smoke and long sherry finish',
+ 'https://drinks-and-style.ch/wp-content/uploads/2024/06/HP_21Years_Release-2023_1200x1200.jpg',
+ true, 0.7, 'spirits'),
+('b8e45d17-6a98-4a43-83f2-529c1f1cbf9a', 'Rémy Martin Louis XIII Cognac', 450,
+ 'Legendary cognac aged in century-old oak barrels with notes of myrrh and honey',
+ 'https://static.cognac-expert.com/2303-thickbox_default/louis-xiii-by-remy-martin-cognac.webp',
+ true, 0.7, 'spirits'),
+ ('50936d58-f5d6-490e-96ed-3c50417b5609', 'Premium Calvados XO', 98,
+ 'Rich apple brandy from Normandy with nutty, warm spice notes',
+ 'https://www.calvados-boulard.com/wp-content/uploads/2020/09/auguste-xo-boulard-calvados-spiritueux-premium.png',
+ true, 0.7, 'spirits')
 ('c45f57c4-018f-4742-8c9d-9a4efc13ff54', 'Cold Brew Coffee', 9, 'Smooth and aromatic, served chilled',
  'https://content.jdmagicbox.com/v2/comp/mumbai/w7/022pxx22.xx22.240730160153.f4w7/catalogue/every-morning-cartel-mumbai-coffee-shops-3s65ky5cpd-250.jpg', FALSE, 0.3, 'coffee'),
 ('d69868b2-3e6d-48a3-93b2-4dc83f83b729', 'Grand Cru Riesling', 75, 'Floral aromas and crisp acidity from Alsace',
