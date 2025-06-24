@@ -35,6 +35,9 @@ public class AdminDrinkService {
         drinkRepository.deleteById(id);
     }
 
+    public Drink getDrink(UUID id) {
+        return drinkRepository.findById(id).orElseThrow(() -> new EntityNotFoundException("There is no Drink with this id!"));
+    }
 
 }
 

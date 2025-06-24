@@ -13,9 +13,6 @@ import java.util.*;
 
 @RestController
 @RequestMapping("/api/v1/admin/menu")
-
-@CrossOrigin("http://localhost:5173/")
-
 public class AdminMenuController {
     private final AdminMenuService adminMenuService;
 
@@ -33,9 +30,6 @@ public class AdminMenuController {
 
     @PostMapping("/")
     public ResponseEntity<Menu> createMenu(@Valid @RequestBody Menu menu) {
-        if (menu.getPrice() < 1) {
-            throw new IllegalArgumentException("Price of the menu can't be under 1!");
-        }
         return new ResponseEntity<>(adminMenuService.createMenu(menu), HttpStatus.CREATED);
     }
 
