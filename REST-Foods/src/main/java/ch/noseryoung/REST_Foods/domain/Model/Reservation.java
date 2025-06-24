@@ -37,8 +37,15 @@ public class Reservation {
     @NotEmpty(message = "Name can't be empty.")
     private String name;
 
+    @NotEmpty
     @Email
     @NotEmpty(message = "Email can't be empty")
     private String email;
+
+    @NotEmpty(message = "Please chosse a avaliable seat")
+    private UUID seatID;
+
+    @NotEmpty
+    private String telephoneNumber;
 
 }

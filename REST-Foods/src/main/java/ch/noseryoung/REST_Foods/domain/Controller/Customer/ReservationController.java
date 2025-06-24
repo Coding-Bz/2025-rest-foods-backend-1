@@ -3,7 +3,9 @@ package ch.noseryoung.REST_Foods.domain.Controller.Customer;
 import ch.noseryoung.REST_Foods.domain.MailAdmin.JavaMailUtil;
 import ch.noseryoung.REST_Foods.domain.Model.Drink;
 import ch.noseryoung.REST_Foods.domain.Model.Reservation;
+import ch.noseryoung.REST_Foods.domain.Model.Seats;
 import ch.noseryoung.REST_Foods.domain.Service.Customer.ReservationService;
+import ch.noseryoung.REST_Foods.domain.Service.Customer.TableService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -16,10 +18,14 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/reservation")
+@CrossOrigin(origins = "http://localhost:5173")
 public class ReservationController {
 
     @Autowired
     ReservationService reservationService;
+
+    @Autowired
+    TableService tableService;
 
     @GetMapping("/")
     public ResponseEntity<List<Reservation>> getAllReservations() {
@@ -46,6 +52,20 @@ public class ReservationController {
         if (reservation.getPartySize() < 1) {
             throw new IllegalArgumentException("Party size must be at least 1!");
         }
+
+        if(reservation.getPartySize()>9){
+            throw new IllegalArgumentException("For bigger sized reservations please call us!");
+        }
+
+        List<Seats> available = tableService.getAvailableTables(reservation.getDate(), reservation.getTime(), reservation.getPartySize());
+
+        if (available.isEmpty()) {
+            throw new IllegalArgumentException("No tables available at the selected time. Please select another time");
+        }
+
+
+
+
         JavaMailUtil.sendMail(reservation.getEmail(),reservation.getName(),reservation.getDate(), reservation.getPartySize(),reservation.getTime());
         return ResponseEntity.ok(reservationService.createReservation(reservation));
     }

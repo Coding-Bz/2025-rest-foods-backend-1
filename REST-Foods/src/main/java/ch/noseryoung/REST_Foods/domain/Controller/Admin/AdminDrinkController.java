@@ -11,7 +11,10 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/admin/drink")
-@CrossOrigin("http://localhost:5173/")
+@CrossOrigin("http://localhost:5173")
+
+
+
 public class AdminDrinkController {
 
     @Autowired

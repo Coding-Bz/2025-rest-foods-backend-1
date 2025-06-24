@@ -16,6 +16,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/v1/admin/reservation")
+@CrossOrigin(origins = "http://localhost:5173")
 public class AdminReservationController {
 
     private final AdminReservationService adminReservationService;
