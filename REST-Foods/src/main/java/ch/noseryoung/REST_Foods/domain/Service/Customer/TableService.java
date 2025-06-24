@@ -24,13 +24,13 @@ public class TableService {
     public List<Seats> getAvailableTables(LocalDate date, LocalTime startTime, int partySize) {
         LocalTime endTime = startTime.plusHours(3);
 
-        List<Seats> allSuitableTables = tableRepository.findByPartySizeGreaterThanEqual(partySize);
+        List<Seats> allSuitableTables = tableRepository.findByTableCapacityGreaterThanEqual(partySize);
         List<Seats> availableTables = new ArrayList<>();
 
         for (Seats table : allSuitableTables) {
             boolean isFree = true;
 
-            List<Reservation> reservations = reservationRepository.findByTableIdAndDate(table.getId(), date);
+            List<Reservation> reservations = reservationRepository.findBySeatIDAndDate(table.getId(), date);
 
             for (Reservation r : reservations) {
                 LocalTime existingStart = r.getTime();

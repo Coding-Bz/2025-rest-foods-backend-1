@@ -39,6 +39,6 @@ public interface ReservationRepository extends JpaRepository<Reservation, UUID> 
 
     List<Reservation> findByEmail(String email);
 
-    List<Reservation> findByTableIdAndDate(UUID seatID, LocalDate date);
+    List<Reservation> findBySeatIDAndDate(UUID seatID, LocalDate date);
 
 }

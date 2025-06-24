@@ -11,7 +11,8 @@ import java.util.UUID;
 @Repository
 public interface TableRepository extends JpaRepository<Seats, UUID>  {
 
-  List<Seats> findByPartySizeGreaterThanEqual(int partySize);
+  List<Seats> findByTableCapacityGreaterThanEqual(int partySize);
+
 
 
 

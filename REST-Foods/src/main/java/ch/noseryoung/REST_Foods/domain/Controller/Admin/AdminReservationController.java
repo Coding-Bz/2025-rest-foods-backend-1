@@ -90,7 +90,7 @@ public class AdminReservationController {
         return ResponseEntity.noContent().build();
     }
 
-    @PutMapping("/{id}")
+  @PutMapping("/{id}")
     public ResponseEntity<Reservation> updateReservation(@PathVariable UUID id, @Valid @RequestBody Reservation reservation) {
         return ResponseEntity.ok(adminReservationService.updateReservation(id, reservation));
     }
