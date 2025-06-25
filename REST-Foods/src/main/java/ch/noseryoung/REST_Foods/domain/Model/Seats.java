@@ -22,6 +22,7 @@ public class Seats {
     @Column(name = "table_id", nullable = false)
     private UUID id;
 
+    @Column(name = "table_capacity")
     @NotNull(message = "Party size can't be null.")
     private Integer tableCapacity;
 

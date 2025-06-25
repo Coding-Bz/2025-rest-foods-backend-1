@@ -46,8 +46,8 @@ public static void sendMail(String recepient, String name, LocalDate date, int p
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(myAccountEmail));
             message.setRecipient(Message.RecipientType.TO, new InternetAddress(recepient));
-            message.setSubject("Success");
-            message.setText("Hi there"+name+"\n"
+            message.setSubject("Reservation Confirmation");
+            message.setText("Hi there "+name+"\n"
             +"Your reservation is in "+date +" "+time+"\n" +"PartySize: "+partySize+" \n" +"At delays we are not obligated to reserve your table any longer");
 
             return message;

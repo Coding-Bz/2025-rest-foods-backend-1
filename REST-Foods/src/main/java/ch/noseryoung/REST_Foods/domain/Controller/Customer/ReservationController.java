@@ -65,7 +65,6 @@ public class ReservationController {
 
 
 
-
         JavaMailUtil.sendMail(reservation.getEmail(),reservation.getName(),reservation.getDate(), reservation.getPartySize(),reservation.getTime());
         return ResponseEntity.ok(reservationService.createReservation(reservation));
     }
