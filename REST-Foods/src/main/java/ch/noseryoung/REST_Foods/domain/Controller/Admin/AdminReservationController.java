@@ -92,6 +92,18 @@ public class AdminReservationController {
 
   @PutMapping("/{id}")
     public ResponseEntity<Reservation> updateReservation(@PathVariable UUID id, @Valid @RequestBody Reservation reservation) {
+      LocalDate today = LocalDate.now();
+      LocalTime now = LocalTime.now();
+      if (reservation.getDate().isBefore(today)) {
+          throw new IllegalArgumentException("Reservation date must be today or in the future.");
+      }
+
+      if (reservation.getDate().isEqual(today) && reservation.getTime().isBefore(now)) {
+          throw new IllegalArgumentException("Reservation time must be in the future.");
+      }
+      if (reservation.getPartySize() < 1) {
+          throw new IllegalArgumentException("Party size must be at least 1!");
+      }
         return ResponseEntity.ok(adminReservationService.updateReservation(id, reservation));
     }
 

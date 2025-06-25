@@ -1,10 +1,10 @@
 {
 	"info": {
-		"_postman_id": "59ebbbfc-3eb4-4aa8-b918-975917f54e19",
+		"_postman_id": "2564e30b-21fa-4a94-80b1-6b247a3ca343",
 		"name": "Fullstack",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "43313868",
-		"_collection_link": "https://interstellar-moon-487414.postman.co/workspace/Team-Workspace~7de392fd-3bf9-4238-808a-157df6cadb27/collection/43313868-59ebbbfc-3eb4-4aa8-b918-975917f54e19?action=share&source=collection_link&creator=43313868"
+		"_collection_link": "https://interstellar-moon-487414.postman.co/workspace/Team-Workspace~7de392fd-3bf9-4238-808a-157df6cadb27/collection/43313868-2564e30b-21fa-4a94-80b1-6b247a3ca343?action=share&source=collection_link&creator=43313868"
 	},
 	"item": [
 		{
@@ -827,7 +827,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -972,7 +972,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5\r\n  \r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1021,7 +1021,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5\r\n  \r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1217,7 +1217,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1266,7 +1266,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1315,7 +1315,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1364,7 +1364,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1413,7 +1413,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1462,7 +1462,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1609,7 +1609,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1658,7 +1658,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1707,7 +1707,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1756,7 +1756,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1903,7 +1903,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1952,7 +1952,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1996,7 +1996,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8080/api/v1/reservation/c7b51d10-accb-4bce-899a-051e9da21a50",
+							"raw": "http://localhost:8080/api/v1/reservation/d8a62c5c-88c5-4e9b-93a6-901c2bcb26bb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2006,7 +2006,7 @@
 								"api",
 								"v1",
 								"reservation",
-								"c7b51d10-accb-4bce-899a-051e9da21a50"
+								"d8a62c5c-88c5-4e9b-93a6-901c2bcb26bb"
 							]
 						}
 					},
@@ -2113,7 +2113,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"time\": \"18:45\",\r\n    \"date\": \"2025-07-13\",\r\n    \"partySize\": 2,\r\n    \"name\": \"Maitre Ziegler\"\r\n}",
+							"raw": "{\r\n    \"time\": \"18:45\",\r\n    \"date\": \"2025-07-13\",\r\n    \"partySize\": 2,\r\n    \"name\": \"Maitre Ziegler\",\r\n    \"email\": \"Maitre@gmail.com\",\r\n    \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n    \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2121,7 +2121,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/reservation/bb219131-2e78-420f-9141-523e23ac32a9",
+							"raw": "http://localhost:8080/api/v1/reservation/90c373e3-8d3f-4e4c-8e58-1c2a2fd03b47",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2131,7 +2131,7 @@
 								"api",
 								"v1",
 								"reservation",
-								"bb219131-2e78-420f-9141-523e23ac32a9"
+								"90c373e3-8d3f-4e4c-8e58-1c2a2fd03b47"
 							]
 						}
 					},
@@ -2697,7 +2697,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5\r\n  \r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2797,7 +2797,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"11:00\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"11:00\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2847,7 +2847,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-06-18\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2855,7 +2855,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/reservation/bb219131-2e78-420f-9141-523e23ac32a9",
+							"raw": "http://localhost:8080/api/v1/admin/reservation/93b3f5dc-3826-4d69-8ef7-3be453b45cfa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2866,7 +2866,7 @@
 								"v1",
 								"admin",
 								"reservation",
-								"bb219131-2e78-420f-9141-523e23ac32a9"
+								"93b3f5dc-3826-4d69-8ef7-3be453b45cfa"
 							]
 						}
 					},
@@ -2897,7 +2897,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2024-06-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2905,7 +2905,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/reservation/bb219131-2e78-420f-9141-523e23ac32a9",
+							"raw": "http://localhost:8080/api/v1/admin/reservation/8db5c61b-9475-4b19-a264-6c49897dd2b3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2916,7 +2916,7 @@
 								"v1",
 								"admin",
 								"reservation",
-								"bb219131-2e78-420f-9141-523e23ac32a9"
+								"8db5c61b-9475-4b19-a264-6c49897dd2b3"
 							]
 						}
 					},
@@ -2947,7 +2947,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": -5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -2955,7 +2955,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/reservation/bb219131-2e78-420f-9141-523e23ac32a9",
+							"raw": "http://localhost:8080/api/v1/admin/reservation/93b3f5dc-3826-4d69-8ef7-3be453b45cfa",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -2966,7 +2966,7 @@
 								"v1",
 								"admin",
 								"reservation",
-								"bb219131-2e78-420f-9141-523e23ac32a9"
+								"93b3f5dc-3826-4d69-8ef7-3be453b45cfa"
 							]
 						}
 					},
@@ -2997,7 +2997,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": \"hallo\",\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": \"hallo\",\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3047,7 +3047,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"00:30\",\r\n  \"date\": \"2025-08-12\",\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3097,7 +3097,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"time\": \"18:30\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3197,7 +3197,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\"\r\n}",
+							"raw": "{\r\n  \"date\": \"2025-08-12\",\r\n  \"partySize\": 5,\r\n  \"name\": \"Bernd\",\r\n  \"email\": \"Bernd@gmail.com\",\r\n  \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n  \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3243,7 +3243,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"time\": \"18:45\",\r\n    \"date\": \"2025-07-13\",\r\n    \"partySize\": 2,\r\n    \"name\": \"Maitre Ziegler\"\r\n}",
+							"raw": "{\r\n    \"time\": \"18:45\",\r\n    \"date\": \"2025-07-13\",\r\n    \"partySize\": 2,\r\n    \"name\": \"Maitre Ziegler\",\r\n    \"email\" : \"Maitre@gmail.com\",\r\n    \"seatID\": \"9e04170c-3e6c-4dd6-9ae5-e7b0b6a10968\",\r\n    \"telephoneNumber\": \"+41 76 234 56 79\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -3251,7 +3251,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/reservation/bb219131-2e78-420f-9141-523e23ac32a9",
+							"raw": "http://localhost:8080/api/v1/admin/reservation/e2374a3e-1333-4f91-9b0e-1e8d3e0a5f67",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -3262,7 +3262,7 @@
 								"v1",
 								"admin",
 								"reservation",
-								"bb219131-2e78-420f-9141-523e23ac32a9"
+								"e2374a3e-1333-4f91-9b0e-1e8d3e0a5f67"
 							]
 						}
 					},
@@ -3292,7 +3292,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/reservation/b09188fa-1d3b-4d14-9690-ad29ac5db433",
+							"raw": "http://localhost:8080/api/v1/admin/reservation/8a2b0f6a-4785-4f2e-bb94-73d6b9468b1c",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -3303,7 +3303,7 @@
 								"v1",
 								"admin",
 								"reservation",
-								"b09188fa-1d3b-4d14-9690-ad29ac5db433"
+								"8a2b0f6a-4785-4f2e-bb94-73d6b9468b1c"
 							]
 						}
 					},
@@ -4592,7 +4592,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/drink/642c8d7e-d021-4e60-8f7b-ff48d1e94498",
+							"raw": "http://localhost:8080/api/v1/drink/642c8d7e-d021-4e60-8f7b-ff48d1e94498",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -4601,7 +4601,6 @@
 							"path": [
 								"api",
 								"v1",
-								"admin",
 								"drink",
 								"642c8d7e-d021-4e60-8f7b-ff48d1e94498"
 							]
@@ -4639,7 +4638,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/drink/642c8d7e-d",
+							"raw": "http://localhost:8080/api/v1/drink/642c8d7e-d",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -4648,7 +4647,6 @@
 							"path": [
 								"api",
 								"v1",
-								"admin",
 								"drink",
 								"642c8d7e-d"
 							]
@@ -4686,7 +4684,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "http://localhost:8080/api/v1/admin/drink/642c8d7e-d021-4e60-8f7b-ff48d1e94499",
+							"raw": "http://localhost:8080/api/v1/drink/642c8d7e-d021-4e60-8f7b-ff48d1e94499",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -4695,7 +4693,6 @@
 							"path": [
 								"api",
 								"v1",
-								"admin",
 								"drink",
 								"642c8d7e-d021-4e60-8f7b-ff48d1e94499"
 							]

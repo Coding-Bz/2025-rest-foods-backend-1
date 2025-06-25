@@ -43,3 +43,9 @@ Dort kannst du:
 
 Es gibt im Repository ein Json mit für Postman, diese kann man herunterladen und in Postman importieren.
 
+
+
+## Requirements:
+To review the document "Planung\Systemübersicht.drawio" it would be the best to have the app "draw.io" installed.
+We highly reccomend you to dowload IntellJEnterprise for The backend and VS for the frontend.
+
