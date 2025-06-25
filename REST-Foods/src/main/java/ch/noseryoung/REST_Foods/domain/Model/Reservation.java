@@ -42,7 +42,7 @@ public class Reservation {
     @NotEmpty(message = "Email can't be empty")
     private String email;
 
-    @NotEmpty(message = "Please chosse a avaliable seat")
+    @NotNull(message = "Please chosse a avaliable seat")
     private UUID seatID;
 
     @NotEmpty
